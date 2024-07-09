@@ -1,0 +1,16 @@
+.about-hero 
+  .container
+    .about-hero__wrapper
+      picture.about-hero__img 
+        img(src="./img/hero/about-hero.webp", alt="")
+      .about-hero__info 
+        h1.about-hero__title Мы можем вывести ваш бизнес на новый уровень 
+        .about-hero__contacts.contacts-us
+          a(href="#").contacts-us__tel
+            span.contacts-us__tel-icon
+              +svg(24, 24, 'tel')
+            span.contacts-us__tel-number Связаться с нами
+          a.contacts-us__link(href="#")
+            +svg(24, 24, 'telegram')  
+          a.contacts-us__link(href="#")
+            +svg(24, 24, 'whatsapp')

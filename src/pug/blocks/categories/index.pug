@@ -1,0 +1,39 @@
+section.categories.section.section-grey
+  .container 
+    .categories__head 
+      h2.categories__title.h2 Категории товаров
+    .categories__list.js-categories-slider 
+      .swiper-wrapper
+        .categories__item.swiper-slide 
+          picture.categories__item-img
+            source(srcset="./img/categories/img-01.webp, ./img/categories/img-01@x2.webp" type="webp")
+            source(srcset="./img/categories/img-01.jpg, ./img/categories/img-01@x2.jpg" type="jpg")
+            img(src="./img/categories/img-01.webp", alt="") 
+          .categories__item-info 
+            span Обслуживание <br> болтовых соединений
+            +svg(24, 24, 'arrow-right')
+        .categories__item.swiper-slide 
+          picture.categories__item-img
+            source(srcset="./img/categories/img-02.webp, ./img/categories/img-02@x2.webp" type="webp")
+            source(srcset="./img/categories/img-02.jpg, ./img/categories/img-02@x2.jpg" type="jpg")
+            img(src="./img/categories/img-02.webp", alt="") 
+          .categories__item-info 
+            span Искробезопасный <br> инструмент
+            +svg(24, 24, 'arrow-right')
+        .categories__item.swiper-slide 
+          picture.categories__item-img
+            source(srcset="./img/categories/img-03.webp, ./img/categories/img-03@x2.webp" type="webp")
+            source(srcset="./img/categories/img-03.jpg, ./img/categories/img-03@x2.jpg" type="jpg")
+            img(src="./img/categories/img-03.webp", alt="") 
+          .categories__item-info 
+            span Промышленная <br> мебель
+            +svg(24, 24, 'arrow-right')
+        .categories__item.swiper-slide 
+          picture.categories__item-img
+            source(srcset="./img/categories/img-04.webp, ./img/categories/img-04@x2.webp" type="webp")
+            source(srcset="./img/categories/img-04.jpg, ./img/categories/img-04@x2.jpg" type="jpg")
+            img(src="./img/categories/img-04.webp", alt="") 
+          .categories__item-info 
+            span Слесарно-монтажный <br> инструмент
+            +svg(24, 24, 'arrow-right')
+      .swiper-pagination

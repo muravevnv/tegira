@@ -1,0 +1,22 @@
+.modal.js-modal(data-modal="modal-consultation")
+  .modal__overlay.js-modal-overlay 
+  .modal__content
+    button(type="button").modal__close.js-modal-close  
+      +svg(24, 24, 'cross')
+    .modal__title.h2 Запросить КП
+    .modal__desc Lorem ipsum dolor sit amet consectetur. Odio 
+    form.modal__form(action="#")
+      .form-group 
+        label.form-label(for="#") Ваше имя
+        input.form-control(type="text" placeholder="Введите имя")  
+      .form-group 
+        label.form-label(for="#") Телефон
+        input.form-control(type="text" placeholder="+7(___)___-__-__")  
+      .form-group 
+        label.form-label(for="#") Ваше имя
+        input.form-control(type="text" placeholder="Введите имя") 
+      .form-checkbox 
+        input(type="checkbox", name="" id="check_condition")
+        label(for="check_condition") Даю согласие на обработку персональных данных. Политика по обработке персональных данных.
+      button(type="submit").form-btn.btn.btn--border.btn--icon-right Заказать звонок
+        +svg(40, 40, 'arrow')

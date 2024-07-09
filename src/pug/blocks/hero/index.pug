@@ -1,0 +1,67 @@
+section.hero.section-grey 
+  .container
+    .hero__wrapper 
+      picture.hero__img
+        source(srcset="./img/hero/hero.jpg, ./img/hero/hero@2x.jpg" type="jpg")
+        source(srcset="./img/hero/hero.webp, ./img/hero/hero@2x.webp" type="webp")
+        img(src="./img/hero/hero.webp", alt="")
+      //- .container 
+      .hero__inner 
+        .hero__info 
+          .hero__contacts.contacts-us 
+            a(href="#").contacts-us__tel
+              span.contacts-us__tel-icon
+                +svg(24, 24, 'tel')
+              span.contacts-us__tel-number Связаться с нами
+            a.contacts-us__link(href="#")
+              +svg(24, 24, 'telegram')  
+            a.contacts-us__link(href="#")
+              +svg(24, 24, 'whatsapp')
+          h1.hero__title.h1 Технологии. <br> Оборудование. <br> Сервис.
+          .hero__desc Новые технологии, современное оборудование и квалифицированный <br> сервис помогут решить ваши производственные задачи <br> на качественно новом уровне.
+        .hero__main 
+          .hero-slider
+            .hero-slider__inner.js-hero-slider
+              .swiper-wrapper 
+                .hero-slider__item.swiper-slide 
+                  .hero-slider__item-name Название товара
+                  picture.hero-slider__item-img 
+                    source(srcset="./img/hero/slide-01.webp" type="images/webp")
+                    img(src="./img/hero/slide-01.png", alt="")
+                  a(href="#").hero-slider__item-link.btn.btn--blur.btn--icon-right
+                    span Подробнее
+                    +svg(40,40,'arrow')
+                .hero-slider__item.swiper-slide 
+                  .hero-slider__item-name Название товара
+                  picture.hero-slider__item-img 
+                    source(srcset="./img/hero/slide-01.webp" type="images/webp")
+                    img(src="./img/hero/slide-01.png", alt="")
+                  a(href="#").hero-slider__item-link.btn.btn--blur.btn--icon-right
+                    span Подробнее
+                    +svg(40,40,'arrow')
+                .hero-slider__item.swiper-slide 
+                  .hero-slider__item-name Название товара
+                  picture.hero-slider__item-img 
+                    source(srcset="./img/hero/slide-01.webp" type="images/webp")
+                    img(src="./img/hero/slide-01.png", alt="")
+                  a(href="#").hero-slider__item-link.btn.btn--blur.btn--icon-right
+                    span Подробнее
+                    +svg(40,40,'arrow')
+          a(href="#").hero__article 
+            .hero__article-info 
+              .hero__article-title Заголовок для важной новости
+              .hero__article-category Какая-то категория
+              .hero__article-desc Компания «ТЕГИРА», образованная техническими специалистами с более чем 10-летним опытом 
+            .hero__article-img
+              .hero__article-icon  
+                +svg(40, 40, 'arrow')
+              picture 
+                source(srcset="./img/hero/article-01.webp" type="images/webp")
+                img(src="./img/hero/article-01.png", alt="")
+          .hero__amount 
+            .hero__amount-num= `<1500`
+            .hero__amount-btn.btn.btn--icon-right
+              span Перейти в каталог
+              .btn-icon 
+                +svg(14, 14, 'arrow-right')
+            .hero__amount-name Единиц оборудования

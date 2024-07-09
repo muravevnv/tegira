@@ -1,0 +1,26 @@
+.similar {
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 0 30px;
+
+    @include media(md) {
+      padding: 0;
+      margin-bottom: 32px;
+    }
+  }
+  
+  &__slider-nav {
+
+    @include media(md) {
+      display: none;
+    }
+  }
+
+  &__slider {
+    overflow: hidden;
+  }
+}

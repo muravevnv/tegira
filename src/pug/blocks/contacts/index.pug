@@ -1,0 +1,26 @@
+section.contacts.section-white 
+  .container 
+    h2.contacts__title.h2 Контакты
+    .contacts__content 
+      .contacts__info 
+        .contacts__item 
+          .contacts__item-icon 
+            +svg(40, 40, 'phone')
+          .contacts__item-desc 
+            span Телефон
+            a(href="tel:+78003331316") 8 (800) 333-13-16
+        .contacts__item 
+          .contacts__item-icon 
+            +svg(40, 40, 'mail')
+          .contacts__item-desc 
+            span Email
+            a(href="mailto:info@tegira.ru") info@tegira.ru
+        .contacts__item 
+          .contacts__item-icon 
+            +svg(40, 40, 'pin')
+          .contacts__item-desc 
+            span Адрес
+            p г. Санкт-Петербург, пр. Юрия Гагарина, д.2 лит. А, пом. 11-Н, ком. 28
+      .contacts__map 
+        .map 
+        img(src="./img/contacts/map.webp", alt="")

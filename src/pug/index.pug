@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Главная')
+  body
+    include mixins/_mixins
+    include components/header-secondary
+    main
+      include blocks/hero/index
+      include blocks/categories/index
+      include blocks/help/index
+      include blocks/fields/index
+      include blocks/advantages/index
+      include blocks/service/index
+      include blocks/order/index
+      include blocks/contacts/index
+    include components/footer
+    include includes/scripts

@@ -1,0 +1,29 @@
+-
+  var advantages = [
+    {
+      id: 1,
+      title: 'Опыт',
+      desc: 'Компания «ТЕГИРА» образована специалистами с более чем 10-летним опытом работы на рынке слесарного инструмента и гидравлического оборудования.',
+    },
+    {
+      id: 2,
+      title: 'Новые технологии',
+      desc: 'Внедрение новейших технологий является непременным условием работы наших специалистов. ',
+    },
+    {
+      id: 3,
+      title: 'Индивидуальный подход',
+      desc: 'Каждое предприятие уникально, поэтому мы всегда находим индивидуальные решения на условиях оптимального соотношения временных, трудовых и финансовых затрат.',
+    },
+  ]
+
+.advantages.section-top-round.section-white 
+  .container 
+    .advantages__inner 
+      h2.advantages__title.h2 Преимущества
+      .advantages__list 
+        for item in advantages
+          .advantages__item 
+            .advantages__item-num= `-0${item.id}`
+            .advantages__item-title= item.title
+            .advantages__item-desc= item.desc

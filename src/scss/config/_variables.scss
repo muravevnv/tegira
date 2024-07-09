@@ -1,0 +1,35 @@
+$colors: (
+  "whte": #fff,
+  "blck": #051C2F,
+  "drk": #2F4252,
+  "text": #0D0D0D,
+  "primary": #FF3D00,
+  "primary-dark": #162734,
+  "secondary": #FF5E4C,
+  "secondary-light": #EC4621,
+  "blue": #1375C3,
+  "dark-blue": #051C2F,
+  "light-blue": #CAD9E8,
+  "green": #9CFD56,
+  "grey": #8E8E8E,
+  "grey-light": #F6F6F6,
+  "input": #F6F6F6,
+  "footer-bg": #090E23,
+  "border": #E7E7E7,
+);
+
+
+:root {
+  @if $colors {
+    @each $key, $value in $colors {
+      --color-#{$key}: #{$value};
+      --color-#{$key}--rgb: #{hextorgb($value)};
+    }
+  }
+  --container-width: 100%;
+  --container-pad: 20px;
+  --font-main: "Manrope", sans-serif;
+  --font-title: "Xolonium", sans-serif;
+  --font-size: 16px;
+  --transition: 0.3s ease-in-out;
+}

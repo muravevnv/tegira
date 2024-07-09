@@ -1,0 +1,39 @@
+@import 'libs/swiper';
+
+//Config
+@import 'config/variables';
+@import 'config/mixins';
+@import 'config/reset';
+@import 'config/fonts';
+@import 'config/global';
+@import 'config/typography';
+@import 'config/form';
+
+//Components
+
+@import 'components/btn';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/breadcrumbs';
+@import 'components/blog-item';
+@import 'components/modal';
+@import 'components/table';
+
+//Sections
+@import 'sections/hero';
+@import 'sections/categories';
+@import 'sections/help';
+@import 'sections/fields';
+@import 'sections/service';
+@import 'sections/advantages';
+@import 'sections/order';
+@import 'sections/contacts';
+@import 'sections/similar';
+@import 'sections/our-contacts';
+
+//Pages
+@import 'pages/blog';
+@import 'pages/article';
+@import 'pages/about';
+@import 'pages/catalog';
+@import 'pages/product';

@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Карточка товара')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'Каталог','Обслуживание болтовых соединений', 'Затяжка моментом','Кассетные моментные гайковерты', 'Серия MLWT'])
+      include blocks/product/index
+      include blocks/similar/index 
+      include blocks/table/index
+      include blocks/order/index 
+    include components/footer
+    include components/modal
+    include components/modal-consultation
+    include includes/scripts

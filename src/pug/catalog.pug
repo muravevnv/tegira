@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Каталог')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'Каталог','Обслуживание болтовых соединений', 'Затяжка моментом','Кассетные моментные гайковерты'])
+      include blocks/catalog/index
+      include blocks/order/index
+    include components/footer
+    include includes/scripts

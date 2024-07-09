@@ -1,0 +1,62 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Статья')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      .breadcrumbs
+        .container.container--pad 
+          ul.breadcrumbs__list 
+            li.breadcrumbs__item 
+              a(href="#") Главная 
+            li.breadcrumbs__item 
+              a(href="#") Новости
+      .page
+        .article 
+          .container.container--pad
+            .article__wrapper 
+              .article__sidebar 
+                .article__share 
+                  .article__share-title Поделиться:
+                  .article__share-socials 
+                    .socials-item 
+                      +svg(16, 16, 'facebook')
+                    .socials-item 
+                      +svg(16, 16, 'instagram')
+                    .socials-item 
+                      +svg(16, 16, 'telegram-fill')
+                nav.article__nav 
+                  .article__nav-item 
+                    .article__nav-item-title Предыдущая статья:
+                    a.article__nav-item-link(href="") 
+                      +svg(16, 16, 'link-arrow-prev')
+                      | Lorem ipsum dolor sit amet consectetur. Facilisi tempor amet.
+                  .article__nav-item 
+                    .article__nav-item-title Следующая статья:
+                    a.article__nav-item-link(href="") 
+                      +svg(16, 16, 'link-arrow-next')
+                      | Lorem ipsum dolor sit amet consectetur. Facilisi tempor amet.
+              .article__main 
+                .article__head
+                  h1.article__title Lorem ipsum dolor sit amet consectetur. Facilisi tempor amet.
+                  .article__date 12.08.24
+                .article__desc 
+                  p Lorem ipsum dolor sit amet consectetur. Tortor cras volutpat volutpat dictum. Nibh morbi a sed cras diam purus non convallis. Viverra ultrices a fermentum erat nulla commodo. Integer porttitor morbi varius amet senectus vitae. Ut tortor morbi nunc tellus morbi egestas sed cursus. Viverra nulla nibh aliquam nunc porta at. Tortor id lectus molestie amet diam fusce nibh congue. Enim purus nullam odio vulputate id eget posuere morbi. Volutpat erat etiam proin id molestie elementum.
+                  p Viverra ultrices a fermentum erat nulla commodo. Integer porttitor morbi varius amet senectus vitae. Ut tortor morbi nunc tellus morbi egestas sed cursus. Viverra nulla nibh aliquam nunc porta at. Tortor id lectus molestie amet diam fusce nibh congue. 
+                picture.article__img 
+                  img(src="./img/article/article-01.webp", alt="")
+                .article__desc 
+                  p Lorem ipsum dolor sit amet consectetur. Tortor cras volutpat volutpat dictum. Nibh morbi a sed cras diam purus non convallis. Viverra ultrices a fermentum erat nulla commodo. Integer porttitor morbi varius amet senectus vitae. Ut tortor morbi nunc tellus morbi egestas sed cursus. Viverra nulla nibh aliquam nunc porta at. Tortor id lectus molestie amet diam fusce nibh congue. Enim purus nullam odio vulputate id eget posuere morbi. Volutpat erat etiam proin id molestie elementum.
+                  p Viverra ultrices a fermentum erat nulla commodo. Integer porttitor morbi varius amet senectus vitae. Ut tortor morbi nunc tellus morbi egestas sed cursus. Viverra nulla nibh aliquam nunc porta at. Tortor id lectus molestie amet diam fusce nibh congue. 
+                .article__images-row 
+                  picture.article__img 
+                    img(src="./img/article/article-02.webp", alt="")
+                  picture.article__img 
+                    img(src="./img/article/article-03.webp", alt="")
+                .article__desc 
+                  p Lorem ipsum dolor sit amet consectetur. Tortor cras volutpat volutpat dictum. Nibh morbi a sed cras diam purus non convallis. Viverra ultrices a fermentum erat nulla commodo. Integer porttitor morbi varius amet senectus vitae. Ut tortor morbi nunc tellus morbi egestas sed cursus. Viverra nulla nibh aliquam nunc porta at. Tortor id lectus molestie amet diam fusce nibh congue. Enim purus nullam odio vulputate id eget posuere morbi. Volutpat erat etiam proin id molestie elementum.
+                  p Viverra ultrices a fermentum erat nulla commodo. Integer porttitor morbi varius amet senectus vitae. Ut tortor morbi nunc tellus morbi egestas sed cursus. Viverra nulla nibh aliquam nunc porta at. Tortor id lectus molestie amet diam fusce nibh congue. 
+    include components/footer
+    include includes/scripts

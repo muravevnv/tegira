@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('О нас')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      include blocks/about/_about-hero
+      include blocks/about/_about-company
+      include blocks/about/_about-techo
+      include blocks/about/_about-production
+      include blocks/about/_about-device
+      include blocks/about/_about-storage
+      include blocks/about/_about-services
+    include components/footer
+    include includes/scripts

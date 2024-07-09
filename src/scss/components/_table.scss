@@ -1,0 +1,51 @@
+.table {
+  padding: 50px 0;
+
+  @include media(md) {
+    padding: 25px 0;
+  }
+
+  &__container {
+    max-width: 100%;
+
+    @include media(lg) {
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  table {
+    width: 100%;
+    border: 1px solid #DEDEDE;
+    border-collapse: collapse;
+
+    @include media(lg)  {
+      min-width: 1280px;
+    }
+  }
+  
+  th {
+    background-color: #F7F8F8;
+  }
+
+  tr {
+
+    &:hover {
+
+      td {
+        background-color: #FFF4F0;
+      }
+    }
+  }
+
+  th, td {
+    border: 1px solid #DEDEDE;
+    text-align: center;
+    padding: 11px 15px;
+    font-size: 14px;
+    transition: var(--transition);
+  }
+}

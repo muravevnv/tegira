@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/style.css" rel="stylesheet">
+      <title>Карточка товара</title>
+    </head>
+  <body>
+    <header class="header"> 
+      <div class="container"> 
+        <div class="header__wrapper"> <a class="header__logo" href=""><img src="./img/logo-black.svg" alt=""></a>
+          <div class="header__search searchbar">
+            <input class="searchbar__input" type="text" placeholder="Поиск...">
+            <button class="searchbar__btn">
+                  <svg width="29" height="29">
+                    <use xlink:href="img/icons/icons.svg#loup"></use>
+                  </svg>
+            </button>
+          </div>
+          <button class="header__burger js-menu-open" type="button"><span> </span></button>
+        </div>
+      </div>
+      <div class="header-menu js-menu"> 
+        <button class="header-menu__close js-menu-close" type="button"> 
+              <svg width="30" height="30">
+                <use xlink:href="img/icons/icons.svg#cross"></use>
+              </svg>
+        </button>
+        <nav class="header-menu__nav"> 
+          <ul class="header-menu__list"> 
+            <li class="header-menu__item"> <a href="#">Каталог продукции</a>
+              <ul class="header-menu__inner-list"> 
+                <li class="header-menu__inner-item"> <a href="">Обслуживание болтовых соединений</a></li>
+                <li class="header-menu__inner-item"> <a href="">Искробезопасный инструмент</a></li>
+                <li class="header-menu__inner-item"> <a href="">Промышленная мебель</a></li>
+                <li class="header-menu__inner-item"> <a href="">Слесарно-монтажный инструмент</a></li>
+              </ul>
+            </li>
+            <li class="header-menu__item"> <a href="#">Сервис</a></li>
+            <li class="header-menu__item"> <a href="#">О компании</a></li>
+            <li class="header-menu__item"> <a href="#">Новости</a></li>
+            <li class="header-menu__item"> <a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-menu__contacts"> 
+          <div class="header-menu__contacts-links">
+            <div class="header-menu__contacts-item"><span>Телефон для связи:</span><a href="tel:+78003331316">8 (800) 333-13-16</a></div>
+            <div class="header-menu__contacts-item"><span>Почта для связи:</span><a href="mailto:info@tegira.ru">info@tegira.ru</a></div>
+          </div><a class="header-menu__contacts-btn btn btn--wide" href="#"> <span>Связаться с нами</span>
+                <svg width="40" height="40">
+                  <use xlink:href="img/icons/icons.svg#arrow"></use>
+                </svg></a>
+        </div>
+      </div>
+    </header>
+    <main>
+          <div class="breadcrumbs">
+            <div class="container container--pad"> 
+              <ul class="breadcrumbs__list"> 
+                <li class="breadcrumbs__item"> <a href="">Главная</a></li>
+                <li class="breadcrumbs__item"> <a href="">Каталог</a></li>
+                <li class="breadcrumbs__item"> <a href="">Обслуживание болтовых соединений</a></li>
+                <li class="breadcrumbs__item"> <a href="">Затяжка моментом</a></li>
+                <li class="breadcrumbs__item"> <a href="">Кассетные моментные гайковерты</a></li>
+                <li class="breadcrumbs__item"> <a href="">Серия MLWT</a></li>
+              </ul>
+            </div>
+          </div>
+      <section class="catalog"> 
+        <div class="container"> 
+          <div class="catalog-content"> 
+            <nav class="catalog-nav"> 
+              <div class="catalog-nav__item is-open">
+                <div class="catalog-nav__item-head">Обслуживание болтовых соединений</div>
+                <div class="catalog-nav__item-body"> 
+                  <div class="catalog-nav__item-section is-open"> 
+                    <div class="catalog-nav__item-section-head">Затяжка моментом</div>
+                    <div class="catalog-nav__item-section-list"> <a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a><a class="catalog-nav__item-section-link is-selected" href="#">Кассетные моментные гайковерты</a><a class="catalog-nav__item-section-link" href="#">Пневматические моментные гайковерты</a><a class="catalog-nav__item-section-link" href="#">Электрические динамометрические гайковерты</a><a class="catalog-nav__item-section-link" href="#">Гидравлические насосы для моментных гайковертов</a></div>
+                  </div>
+                  <div class="catalog-nav__item-section"> 
+                    <div class="catalog-nav__item-section-head">Затяжка натяжением</div>
+                    <div class="catalog-nav__item-section-list"> <a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a><a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a><a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a><a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a><a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a></div>
+                  </div>
+                  <div class="catalog-nav__item-section"> 
+                    <div class="catalog-nav__item-section-head">Гидравлические цилиндры</div>
+                    <div class="catalog-nav__item-section-list"> <a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a><a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a><a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a><a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a><a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a></div>
+                  </div>
+                  <div class="catalog-nav__item-section"> 
+                    <div class="catalog-nav__item-section-head">Прочее оборудование</div>
+                    <div class="catalog-nav__item-section-list"> <a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a><a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a><a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a><a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a><a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-nav__item">
+                <div class="catalog-nav__item-head">Искробезопасный инструмент</div>
+                <div class="catalog-nav__item-body">
+                  <div class="catalog-nav__item-section"> 
+                    <div class="catalog-nav__item-section-head">Затяжка моментом</div>
+                    <div class="catalog-nav__item-section-list"> <a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-nav__item">
+                <div class="catalog-nav__item-head">Промышленная мебель</div>
+                <div class="catalog-nav__item-body">
+                  <div class="catalog-nav__item-section"> 
+                    <div class="catalog-nav__item-section-head">Затяжка моментом</div>
+                    <div class="catalog-nav__item-section-list"> <a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-nav__item">
+                <div class="catalog-nav__item-head">Слесарно-монтажный инструмент</div>
+                <div class="catalog-nav__item-body">
+                  <div class="catalog-nav__item-section"> 
+                    <div class="catalog-nav__item-section-head">Затяжка моментом</div>
+                    <div class="catalog-nav__item-section-list"> <a class="catalog-nav__item-section-link" href="#">Торцевые моментные гайковерты</a></div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <div class="product"> 
+              <div class="product__title">Серия MLWT</div>
+              <div class="product__content"> 
+                <div class="product__gallery"> <a class="product__img" data-fslightbox="gallery" href="./img/product/product.webp"> 
+                    <picture> 
+                      <source srcset="./img/product/product.webp" type="images/webp"><img src="./img/product/product.jpg" alt="">
+                    </picture>
+                    <div class="product__img-zoom"> 
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#zoom"></use>
+                          </svg>
+                    </div></a>
+                  <div class="product__previews"> 
+                    <div class="product__previews-item"><picture><source srcset="./img/product/preview-01.webp" type="image/webp"><img src="./img/product/preview-01.png" alt=""></picture></div>
+                    <div class="product__previews-item"><picture><source srcset="./img/product/preview-02.webp" type="image/webp"><img src="./img/product/preview-02.png" alt=""></picture></div>
+                    <div class="product__previews-item"><picture><source srcset="./img/product/preview-03.webp" type="image/webp"><img src="./img/product/preview-03.png" alt=""></picture></div>
+                    <div class="product__previews-item"><picture><source srcset="./img/product/preview-04.webp" type="image/webp"><img src="./img/product/preview-04.png" alt=""></picture></div>
+                    <button class="product__previews-show" type="button">+3</button>
+                  </div>
+                </div>
+                <div class="product__info"> 
+                  <div class="product__info-controls">  
+                    <button class="product__info-btn btn btn--icon-right js-modal-open" type="button" data-modal="modal-order"><span>Запросить КП</span>
+                          <svg width="40" height="40">
+                            <use xlink:href="img/icons/icons.svg#arrow"></use>
+                          </svg>
+                    </button>
+                    <button class="product__info-btn btn btn--icon-right btn--border js-modal-open" type="button" data-modal="modal-consultation"><span>Консультация</span>
+                          <svg width="40" height="40">
+                            <use xlink:href="img/icons/icons.svg#arrow"></use>
+                          </svg>
+                    </button>
+                  </div>
+                  <div class="product__details"> 
+                    <div class="product__detail">материал: хромованадиевая сталь Premium</div>
+                    <div class="product__detail">кованый, целиком подвергнут закалке и отпуску</div>
+                    <div class="product__detail">обработка поверхности: хромирование в соответствии со стандартом ISO 1456:2009</div>
+                    <div class="product__detail">полированные головки</div>
+                    <div class="product__detail">кольцевая часть с новым профилем LIFE - смещение точки приложения усилия</div>
+                    <div class="product__detail">изготовлен в соответствии со стандартом ISO 7738 (для метрических размеров)</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__main"> 
+                <div class="product__main-text">
+                  <p>Lorem ipsum dolor sit amet consectetur. Tortor cras volutpat volutpat dictum. Nibh morbi a sed cras diam purus non convallis. Viverra ultrices a fermentum erat nulla commodo. Integer porttitor morbi varius amet senectus vitae. Ut tortor morbi nunc tellus morbi egestas sed cursus. Viverra nulla nibh aliquam nunc porta at. Tortor id lectus molestie amet diam fusce nibh congue. Enim purus nullam odio vulputate id eget posuere morbi. Volutpat erat etiam proin id molestie elementum.</p>
+                  <p>Viverra ultrices a fermentum erat nulla commodo. Integer porttitor morbi varius amet senectus vitae. Ut tortor morbi nunc tellus morbi egestas sed cursus. Viverra nulla nibh aliquam nunc porta at. Tortor id lectus molestie amet diam fusce nibh congue. </p>
+                </div><a class="product__main-video" data-fslightbox="gallery" href="./img/product/product-02.webp">
+                  <picture>
+                    <source src="./img/product/product-02.webp" type="images/webp"><img src="./img/product/product-02.jpg" alt="">
+                  </picture><span class="product__main-video-play">
+                        <svg width="33" height="33">
+                          <use xlink:href="img/icons/icons.svg#play"></use>
+                        </svg></span><span class="product__main-video-zoom">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#zoom"></use>
+                        </svg></span></a>
+                <div class="product__main-text">
+                  <p>Lorem ipsum dolor sit amet consectetur. Tortor cras volutpat volutpat dictum. Nibh morbi a sed cras diam purus non convallis. Viverra ultrices a fermentum erat nulla commodo. Integer porttitor morbi varius amet senectus vitae. Ut tortor morbi nunc tellus morbi egestas sed cursus. Viverra nulla nibh aliquam nunc porta at. Tortor id lectus molestie amet diam fusce nibh congue. Enim purus nullam odio vulputate id eget posuere morbi. Volutpat erat etiam proin id molestie elementum.</p>
+                  <p>Viverra ultrices a fermentum erat nulla commodo. Integer porttitor morbi varius amet senectus vitae. Ut tortor morbi nunc tellus morbi egestas sed cursus. Viverra nulla nibh aliquam nunc porta at. Tortor id lectus molestie amet diam fusce nibh congue. </p>
+                </div>
+                <div class="product__main-gallery"> <a class="product__main-img" data-fslightbox="gallery" href="./img/product/product-03.webp"> 
+                    <picture>
+                      <source src="./img/product/product-03.webp" type="images/webp"><img src="./img/product/product-03.jpg" alt="">
+                    </picture><span class="product__main-img-zoom">
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#zoom"></use>
+                          </svg></span></a><a class="product__main-img" data-fslightbox="gallery" href="./img/product/product-04.webp"> 
+                    <picture>
+                      <source src="./img/product/product-04.webp" type="images/webp"><img src="./img/product/product-04.jpg" alt="">
+                    </picture><span class="product__main-img-zoom">
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#zoom"></use>
+                          </svg></span></a><a class="product__main-img" data-fslightbox="gallery" href="./img/product/product-05.webp"> 
+                    <picture>
+                      <source src="./img/product/product-05.webp" type="images/webp"><img src="./img/product/product-05.jpg" alt="">
+                    </picture><span class="product__main-img-zoom">
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#zoom"></use>
+                          </svg></span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="similar"> 
+        <div class="container"> 
+          <div class="similar__head"> 
+            <h2 class="similar__title h2">С этим товаром покупают</h2>
+            <div class="similar__slider-nav slider-nav"> 
+              <button class="slider-nav-prev js-similar-slider-prev">
+                    <svg width="40" height="40">
+                      <use xlink:href="img/icons/icons.svg#arrow"></use>
+                    </svg>
+              </button>
+              <button class="slider-nav-next js-similar-slider-next">
+                    <svg width="40" height="40">
+                      <use xlink:href="img/icons/icons.svg#arrow"></use>
+                    </svg>
+              </button>
+            </div>
+          </div>
+          <div class="similar__slider js-similar-slider"> 
+            <div class="swiper-wrapper">
+              <div class="catalog-item swiper-slide"> 
+                <div class="catalog-item__main">
+                  <div class="catalog-item__category">Ключи</div><a class="catalog-item__img" href="#">
+                    <picture> 
+                      <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
+                    </picture></a><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
+                          <svg width="40" height="40">
+                            <use xlink:href="img/icons/icons.svg#arrow"></use>
+                          </svg></span></a>
+                </div>
+                <div class="catalog-item__name">серия MST</div>
+              </div>
+              <div class="catalog-item swiper-slide"> 
+                <div class="catalog-item__main">
+                  <div class="catalog-item__category">Ключи</div><a class="catalog-item__img" href="#">
+                    <picture> 
+                      <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
+                    </picture></a><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
+                          <svg width="40" height="40">
+                            <use xlink:href="img/icons/icons.svg#arrow"></use>
+                          </svg></span></a>
+                </div>
+                <div class="catalog-item__name">серия MST</div>
+              </div>
+              <div class="catalog-item swiper-slide"> 
+                <div class="catalog-item__main">
+                  <div class="catalog-item__category">Ключи</div><a class="catalog-item__img" href="#">
+                    <picture> 
+                      <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
+                    </picture></a><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
+                          <svg width="40" height="40">
+                            <use xlink:href="img/icons/icons.svg#arrow"></use>
+                          </svg></span></a>
+                </div>
+                <div class="catalog-item__name">серия MST</div>
+              </div>
+              <div class="catalog-item swiper-slide"> 
+                <div class="catalog-item__main">
+                  <div class="catalog-item__category">Ключи</div><a class="catalog-item__img" href="#">
+                    <picture> 
+                      <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
+                    </picture></a><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
+                          <svg width="40" height="40">
+                            <use xlink:href="img/icons/icons.svg#arrow"></use>
+                          </svg></span></a>
+                </div>
+                <div class="catalog-item__name">серия MST</div>
+              </div>
+              <div class="catalog-item swiper-slide"> 
+                <div class="catalog-item__main">
+                  <div class="catalog-item__category">Ключи</div><a class="catalog-item__img" href="#">
+                    <picture> 
+                      <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
+                    </picture></a><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
+                          <svg width="40" height="40">
+                            <use xlink:href="img/icons/icons.svg#arrow"></use>
+                          </svg></span></a>
+                </div>
+                <div class="catalog-item__name">серия MST</div>
+              </div>
+              <div class="catalog-item swiper-slide"> 
+                <div class="catalog-item__main">
+                  <div class="catalog-item__category">Ключи</div><a class="catalog-item__img" href="#">
+                    <picture> 
+                      <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
+                    </picture></a><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
+                          <svg width="40" height="40">
+                            <use xlink:href="img/icons/icons.svg#arrow"></use>
+                          </svg></span></a>
+                </div>
+                <div class="catalog-item__name">серия MST</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="table">
+        <div class="container"> 
+          <div class="table__container"> 
+            <table> 
+              <tr> 
+                <th rowspan="2">Модель</th>
+                <th colspan="2">Крутящийся момент, H м</th>
+                <th rowspan="2">Резьба, М</th>
+                <th rowspan="2">Привод</th>
+                <th rowspan="2">Масса, кг</th>
+                <th colspan="10">Размеры, мм</th>
+                <th rowspan="2">Оформить заказ</th>
+              </tr>
+              <tr> 
+                <th>Мин.</th>
+                <th>Макс.</th>
+                <th>L1</th>
+                <th>L2</th>
+                <th>H1</th>
+                <th>H2</th>
+                <th>H3</th>
+                <th>H4</th>
+                <th>R</th>
+                <th>R1</th>
+                <th>R2</th>
+                <th>R3</th>
+              </tr>
+              <tr> 
+                <td>MLWT - 07</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Заказать →</td>
+              </tr>
+              <tr> 
+                <td>MLWT - 07</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Заказать →</td>
+              </tr>
+              <tr> 
+                <td>MLWT - 07</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Заказать →</td>
+              </tr>
+              <tr> 
+                <td>MLWT - 07</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Заказать →</td>
+              </tr>
+              <tr> 
+                <td>MLWT - 07</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Заказать →</td>
+              </tr>
+              <tr> 
+                <td>MLWT - 07</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Заказать →</td>
+              </tr>
+              <tr> 
+                <td>MLWT - 07</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Заказать →</td>
+              </tr>
+              <tr> 
+                <td>MLWT - 07</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Мин.</td>
+                <td>Заказать →</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="order section-white"> 
+        <div class="container">
+          <div class="order__wrapper"> 
+            <picture class="order__img"> <picture><source srcset="./img/order/order@x2.webp" type="image/webp"><img src="./img/order/order@x2.webp" alt=""></picture></picture>
+            <div class="order__main"> 
+              <h2 class="order__title h2">Запрос на расчет</h2>
+              <div class="order__desc">Lorem ipsum dolor sit amet consectetur. Odio elit congue amet molestie viverra mattis porttitor amet.</div>
+              <form class="order__form" action="#">
+                <div class="form-group"> 
+                  <label class="form-label" for="#">Ваше имя</label>
+                  <input class="form-control" type="text" placeholder="Введите имя">
+                </div>
+                <div class="form-group"> 
+                  <label class="form-label" for="#">Телефон</label>
+                  <input class="form-control" type="text" placeholder="+7(___)___-__-__">
+                </div>
+                <div class="form-group"> 
+                  <label class="form-label" for="#">Комментарий</label>
+                  <textarea class="form-control" name="" placeholder="Наберите сообщение.."></textarea>
+                </div>
+                <div class="form-agreement">Нажимая кнопку «Отправить», вы соглашаетесь с Политикой конфиденциальности.</div>
+                <button class="form-btn btn btn--border btn--icon-right" type="submit">Заказать звонок
+                      <svg width="40" height="40">
+                        <use xlink:href="img/icons/icons.svg#arrow"></use>
+                      </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"> 
+      <div class="container"> 
+        <div class="footer__wrapper"> 
+          <div class="footer__main"> <a class="footer__logo" href="#"><img src="./img/logo.svg" alt=""></a>
+            <div class="footer__contacts"> <span>Связаться с нами:</span><a href="tel:+78003331316">8 (800) 333-13-16</a><a href="mailto:info@tegira.ru">info@tegira.ru</a></div>
+          </div>
+          <div class="footer__catalog"> <span>Каталог</span><a href="#">Обслуживание болтовых соединений</a><a href="#">Искробезопасный инструмент</a><a href="#">Промышленная мебель</a><a href="#">Слесарно-монтажный инструмент</a></div>
+          <div class="footer__nav"><span>О компании</span>
+            <ul>
+              <li>        <a href="#">О нас</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Сервис</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Документы</a></li>
+            </ul>
+          </div>
+          <div class="footer__bottom"> 
+            <div class="footer__company">© 2022-2024 Tegira</div>
+            <div class="footer__documents"><a class="footer__policy" href="">Политика конфиденциальности</a><a class="footer__agreement" href="">Пользовательское соглашение </a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal js-modal" data-modal="modal-order">
+      <div class="modal__overlay js-modal-overlay"> </div>
+      <div class="modal__content">
+        <button class="modal__close js-modal-close" type="button"> 
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#cross"></use>
+              </svg>
+        </button>
+        <div class="modal__title h2">Заказать консультацию</div>
+        <div class="modal__desc">Lorem ipsum dolor sit amet consectetur. Odio </div>
+        <form class="modal__form" action="#">
+          <div class="form-group"> 
+            <label class="form-label" for="#">Ваше имя</label>
+            <input class="form-control" type="text" placeholder="Введите имя">
+          </div>
+          <div class="form-group"> 
+            <label class="form-label" for="#">Телефон</label>
+            <input class="form-control" type="text" placeholder="+7(___)___-__-__">
+          </div>
+          <div class="form-group"> 
+            <label class="form-label" for="#">Ваше имя</label>
+            <input class="form-control" type="text" placeholder="Введите имя">
+          </div>
+          <div class="form-checkbox"> 
+            <input type="checkbox" name="" id="check_condition">
+            <label for="check_condition">Даю согласие на обработку персональных данных. Политика по обработке персональных данных.</label>
+          </div>
+          <button class="form-btn btn btn--border btn--icon-right" type="submit">Заказать звонок
+                <svg width="40" height="40">
+                  <use xlink:href="img/icons/icons.svg#arrow"></use>
+                </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="modal js-modal" data-modal="modal-consultation">
+      <div class="modal__overlay js-modal-overlay"> </div>
+      <div class="modal__content">
+        <button class="modal__close js-modal-close" type="button"> 
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#cross"></use>
+              </svg>
+        </button>
+        <div class="modal__title h2">Запросить КП</div>
+        <div class="modal__desc">Lorem ipsum dolor sit amet consectetur. Odio </div>
+        <form class="modal__form" action="#">
+          <div class="form-group"> 
+            <label class="form-label" for="#">Ваше имя</label>
+            <input class="form-control" type="text" placeholder="Введите имя">
+          </div>
+          <div class="form-group"> 
+            <label class="form-label" for="#">Телефон</label>
+            <input class="form-control" type="text" placeholder="+7(___)___-__-__">
+          </div>
+          <div class="form-group"> 
+            <label class="form-label" for="#">Ваше имя</label>
+            <input class="form-control" type="text" placeholder="Введите имя">
+          </div>
+          <div class="form-checkbox"> 
+            <input type="checkbox" name="" id="check_condition">
+            <label for="check_condition">Даю согласие на обработку персональных данных. Политика по обработке персональных данных.</label>
+          </div>
+          <button class="form-btn btn btn--border btn--icon-right" type="submit">Заказать звонок
+                <svg width="40" height="40">
+                  <use xlink:href="img/icons/icons.svg#arrow"></use>
+                </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

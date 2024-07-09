@@ -1,0 +1,75 @@
+.blog {
+
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @include media(sm) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 54px 20px;
+
+    @include media(lg)  {
+      gap: 20px;
+    }
+
+    @include media(md) {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 16px;
+    }
+
+    @include media(xs) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__sort {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    &-select {
+      padding: 14px;
+      height: 48px;
+      border-radius: 8px;
+      color: rgba(0, 0, 0, .4);
+      outline: none;
+      width: 278px;
+      outline: none;
+      border: none;
+      user-select: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: #F8F8F8;
+      background-image:  url('../img/icons/arrow-down.svg');
+      background-position: top 12px right 8px;
+      background-size: 24px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+
+      @include media(xs) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__pagination {
+    margin-top: 70px;
+
+    @include media(md) {
+      margin-top: 40px;
+    }
+  }
+}

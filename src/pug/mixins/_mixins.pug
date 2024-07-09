@@ -1,0 +1,11 @@
+mixin svg(width, height, id)
+  svg(width= width, height= height)
+    use(xlink:href=`img/icons/icons.svg#${id}`)
+
+mixin breadcrumbs(links)
+  .breadcrumbs
+    .container.container--pad 
+      ul.breadcrumbs__list 
+        for item in links
+          li.breadcrumbs__item 
+            a(href="")= item 

@@ -1,0 +1,48 @@
+- 
+  var fieldsList = [
+    {
+      id: 1,
+      title: 'Добывающая промышленность'
+    },
+    {
+      id: 2,
+      title: 'Нефтегазовая отрасль'
+    },
+    {
+      id: 3,
+      title: 'Химическая отрасль'
+    },
+    {
+      id: 4,
+      title: 'Электроэнергетика'
+    },
+    {
+      id: 5,
+      title: 'Машиностроение'
+    },
+    {
+      id: 6,
+      title: 'Металлургия'
+    },
+    {
+      id: 7,
+      title: 'Транспорт'
+    },
+    {
+      id: 8,
+      title: 'Индивидуальные задачи'
+    },
+  ]
+
+section.fields.section.section-grey 
+  .container 
+    .fields__head.section__head 
+      h2.fields__title.h2 Сферы применения
+    .fields__list 
+      for item in fieldsList
+        .fields__item 
+          picture.fields__item-img 
+            source(srcset=`./img/fields/img-0${item.id}.jpg, ./img/fields/img-0${item.id}@x2.jpg 2x` type="jpg")
+            source(srcset=`./img/fields/img-0${item.id}.webp, ./img/fields/img-0${item.id}@x2.webp 2x` type="webp")
+            img(src=`./img/fields/img-0${item.id}@x2.webp` srcset=`./img/fields/img-0${item.id}@x2.webp, ./img/fields/img-0${item.id}@x2.webp 2x`, alt="")
+          .fields__item-title= item.title

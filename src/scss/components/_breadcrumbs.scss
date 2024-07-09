@@ -1,0 +1,45 @@
+.breadcrumbs {
+
+  padding: 10px 0;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__item {
+    opacity: .5;
+    white-space: nowrap;
+
+    &:not(:last-of-type) {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+
+      &::after {
+        content: '/';
+      }
+    }
+
+    &:last-of-type {
+      opacity: 1;
+      pointer-events: none;
+    }
+
+    @media(any-hover: hover) {
+
+      &:hover {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

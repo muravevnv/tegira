@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  include includes/head
+  +head('Контакты')
+  body
+    include mixins/_mixins
+    include components/header
+    main
+      +breadcrumbs(['Главная', 'Контакты'])
+      include blocks/our-contacts/index
+      include blocks/order/index 
+    include components/footer
+    include components/modal
+    include components/modal-consultation
+    include includes/scripts

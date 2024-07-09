@@ -1,0 +1,12 @@
+section.service 
+  .container
+    .service__inner
+      .service__content 
+        picture.service__img 
+          source(srcset="./img/service/service-sm@x2.webp" media="(max-width: 560px)")
+          img(src="./img/service/service@x2.webp", alt="")
+        .service__info 
+          h2.service__title.h2 Сервис
+          .service__desc Услуги, предлагаемые нашей компанией, включают не только технические консультации и подбор инструмента и оборудования под ваши потребности, но также ремонт и обслуживание, калибровку и поверку поставляемого или находящегося в распоряжении заказчика оборудования. 
+          a.service__btn.btn.btn--outline.btn--icon-right Подробнее
+            +svg(40, 40, 'arrow')

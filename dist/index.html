@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/style.css" rel="stylesheet">
+      <title>Главная</title>
+    </head>
+  <body>
+    <header class="header header--secondary"> 
+      <div class="container"> 
+        <div class="header__wrapper"> <a class="header__logo" href=""><img src="./img/logo.svg" alt=""></a>
+          <div class="header__search searchbar">
+            <input class="searchbar__input" type="text" placeholder="Поиск...">
+            <button class="searchbar__btn">
+                  <svg width="29" height="29">
+                    <use xlink:href="img/icons/icons.svg#loup"></use>
+                  </svg>
+            </button>
+          </div>
+          <button class="header__burger js-menu-open" type="button"><span> </span></button>
+        </div>
+      </div>
+      <div class="header-menu js-menu"> 
+        <button class="header-menu__close js-menu-close" type="button"> 
+              <svg width="30" height="30">
+                <use xlink:href="img/icons/icons.svg#cross"></use>
+              </svg>
+        </button>
+        <nav class="header-menu__nav"> 
+          <ul class="header-menu__list"> 
+            <li class="header-menu__item"> <a href="#">Каталог продукции</a>
+              <ul class="header-menu__inner-list"> 
+                <li class="header-menu__inner-item"> <a href="">Обслуживание болтовых соединений</a></li>
+                <li class="header-menu__inner-item"> <a href="">Искробезопасный инструмент</a></li>
+                <li class="header-menu__inner-item"> <a href="">Промышленная мебель</a></li>
+                <li class="header-menu__inner-item"> <a href="">Слесарно-монтажный инструмент</a></li>
+              </ul>
+            </li>
+            <li class="header-menu__item"> <a href="#">Сервис</a></li>
+            <li class="header-menu__item"> <a href="#">О компании</a></li>
+            <li class="header-menu__item"> <a href="#">Новости</a></li>
+            <li class="header-menu__item"> <a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-menu__contacts"> 
+          <div class="header-menu__contacts-links">
+            <div class="header-menu__contacts-item"><span>Телефон для связи:</span><a href="tel:+78003331316">8 (800) 333-13-16</a></div>
+            <div class="header-menu__contacts-item"><span>Почта для связи:</span><a href="mailto:info@tegira.ru">info@tegira.ru</a></div>
+          </div><a class="header-menu__contacts-btn btn btn--wide" href="#"> <span>Связаться с нами</span>
+                <svg width="40" height="40">
+                  <use xlink:href="img/icons/icons.svg#arrow"></use>
+                </svg></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero section-grey"> 
+        <div class="container">
+          <div class="hero__wrapper"> 
+            <picture class="hero__img">
+              <source srcset="./img/hero/hero.jpg, ./img/hero/hero@2x.jpg" type="jpg">
+              <source srcset="./img/hero/hero.webp, ./img/hero/hero@2x.webp" type="webp"><img src="./img/hero/hero.webp" alt="">
+            </picture>
+            <div class="hero__inner"> 
+              <div class="hero__info"> 
+                <div class="hero__contacts contacts-us"> <a class="contacts-us__tel" href="#"><span class="contacts-us__tel-icon">
+                          <svg width="24" height="24">
+                            <use xlink:href="img/icons/icons.svg#tel"></use>
+                          </svg></span><span class="contacts-us__tel-number">Связаться с нами</span></a><a class="contacts-us__link" href="#">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#telegram"></use>
+                        </svg></a><a class="contacts-us__link" href="#">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#whatsapp"></use>
+                        </svg></a></div>
+                <h1 class="hero__title h1">Технологии. <br> Оборудование. <br> Сервис.</h1>
+                <div class="hero__desc">Новые технологии, современное оборудование и квалифицированный <br> сервис помогут решить ваши производственные задачи <br> на качественно новом уровне.</div>
+              </div>
+              <div class="hero__main"> 
+                <div class="hero-slider">
+                  <div class="hero-slider__inner js-hero-slider">
+                    <div class="swiper-wrapper"> 
+                      <div class="hero-slider__item swiper-slide"> 
+                        <div class="hero-slider__item-name">Название товара</div>
+                        <picture class="hero-slider__item-img"> 
+                          <source srcset="./img/hero/slide-01.webp" type="images/webp"><img src="./img/hero/slide-01.png" alt="">
+                        </picture><a class="hero-slider__item-link btn btn--blur btn--icon-right" href="#"><span>Подробнее</span>
+                              <svg width="40" height="40">
+                                <use xlink:href="img/icons/icons.svg#arrow"></use>
+                              </svg></a>
+                      </div>
+                      <div class="hero-slider__item swiper-slide"> 
+                        <div class="hero-slider__item-name">Название товара</div>
+                        <picture class="hero-slider__item-img"> 
+                          <source srcset="./img/hero/slide-01.webp" type="images/webp"><img src="./img/hero/slide-01.png" alt="">
+                        </picture><a class="hero-slider__item-link btn btn--blur btn--icon-right" href="#"><span>Подробнее</span>
+                              <svg width="40" height="40">
+                                <use xlink:href="img/icons/icons.svg#arrow"></use>
+                              </svg></a>
+                      </div>
+                      <div class="hero-slider__item swiper-slide"> 
+                        <div class="hero-slider__item-name">Название товара</div>
+                        <picture class="hero-slider__item-img"> 
+                          <source srcset="./img/hero/slide-01.webp" type="images/webp"><img src="./img/hero/slide-01.png" alt="">
+                        </picture><a class="hero-slider__item-link btn btn--blur btn--icon-right" href="#"><span>Подробнее</span>
+                              <svg width="40" height="40">
+                                <use xlink:href="img/icons/icons.svg#arrow"></use>
+                              </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div><a class="hero__article" href="#"> 
+                  <div class="hero__article-info"> 
+                    <div class="hero__article-title">Заголовок для важной новости</div>
+                    <div class="hero__article-category">Какая-то категория</div>
+                    <div class="hero__article-desc">Компания «ТЕГИРА», образованная техническими специалистами с более чем 10-летним опытом </div>
+                  </div>
+                  <div class="hero__article-img">
+                    <div class="hero__article-icon"> 
+                          <svg width="40" height="40">
+                            <use xlink:href="img/icons/icons.svg#arrow"></use>
+                          </svg>
+                    </div>
+                    <picture> 
+                      <source srcset="./img/hero/article-01.webp" type="images/webp"><img src="./img/hero/article-01.png" alt="">
+                    </picture>
+                  </div></a>
+                <div class="hero__amount"> 
+                  <div class="hero__amount-num">&lt;1500</div>
+                  <div class="hero__amount-btn btn btn--icon-right"><span>Перейти в каталог</span>
+                    <div class="btn-icon"> 
+                          <svg width="14" height="14">
+                            <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                          </svg>
+                    </div>
+                  </div>
+                  <div class="hero__amount-name">Единиц оборудования</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="categories section section-grey">
+        <div class="container"> 
+          <div class="categories__head"> 
+            <h2 class="categories__title h2">Категории товаров</h2>
+          </div>
+          <div class="categories__list js-categories-slider"> 
+            <div class="swiper-wrapper">
+              <div class="categories__item swiper-slide"> 
+                <picture class="categories__item-img">
+                  <source srcset="./img/categories/img-01.webp, ./img/categories/img-01@x2.webp" type="webp">
+                  <source srcset="./img/categories/img-01.jpg, ./img/categories/img-01@x2.jpg" type="jpg"><img src="./img/categories/img-01.webp" alt="">
+                </picture>
+                <div class="categories__item-info"> <span>Обслуживание <br> болтовых соединений</span>
+                      <svg width="24" height="24">
+                        <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                      </svg>
+                </div>
+              </div>
+              <div class="categories__item swiper-slide"> 
+                <picture class="categories__item-img">
+                  <source srcset="./img/categories/img-02.webp, ./img/categories/img-02@x2.webp" type="webp">
+                  <source srcset="./img/categories/img-02.jpg, ./img/categories/img-02@x2.jpg" type="jpg"><img src="./img/categories/img-02.webp" alt="">
+                </picture>
+                <div class="categories__item-info"> <span>Искробезопасный <br> инструмент</span>
+                      <svg width="24" height="24">
+                        <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                      </svg>
+                </div>
+              </div>
+              <div class="categories__item swiper-slide"> 
+                <picture class="categories__item-img">
+                  <source srcset="./img/categories/img-03.webp, ./img/categories/img-03@x2.webp" type="webp">
+                  <source srcset="./img/categories/img-03.jpg, ./img/categories/img-03@x2.jpg" type="jpg"><img src="./img/categories/img-03.webp" alt="">
+                </picture>
+                <div class="categories__item-info"> <span>Промышленная <br> мебель</span>
+                      <svg width="24" height="24">
+                        <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                      </svg>
+                </div>
+              </div>
+              <div class="categories__item swiper-slide"> 
+                <picture class="categories__item-img">
+                  <source srcset="./img/categories/img-04.webp, ./img/categories/img-04@x2.webp" type="webp">
+                  <source srcset="./img/categories/img-04.jpg, ./img/categories/img-04@x2.jpg" type="jpg"><img src="./img/categories/img-04.webp" alt="">
+                </picture>
+                <div class="categories__item-info"> <span>Слесарно-монтажный <br> инструмент</span>
+                      <svg width="24" height="24">
+                        <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                      </svg>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-grey help">
+        <div class="container"> 
+          <div class="help__inner">
+            <h2 class="help__title h2">Мы можем вывести ваш бизнес на новый уровень</h2>
+            <div class="help__info"> 
+              <div class="help__desc">Компания «ТЕГИРА», образованная техническими специалистами с более чем 10-летним опытом работы в сфере обслуживания болтовых и фланцевых соединений на промышленных предприятиях России, предлагает гидравлическое, пневматическое и электрическое оборудование, выпускаемое под торговой маркой teho.</div><a class="help__link btn btn--outline btn--icon-right">Подробнее о нас
+                    <svg width="40" height="40">
+                      <use xlink:href="img/icons/icons.svg#arrow"></use>
+                    </svg></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fields section section-grey"> 
+        <div class="container"> 
+          <div class="fields__head section__head"> 
+            <h2 class="fields__title h2">Сферы применения</h2>
+          </div>
+          <div class="fields__list"> 
+            <div class="fields__item"> 
+              <picture class="fields__item-img"> 
+                <source srcset="./img/fields/img-01.jpg, ./img/fields/img-01@x2.jpg 2x" type="jpg">
+                <source srcset="./img/fields/img-01.webp, ./img/fields/img-01@x2.webp 2x" type="webp"><img src="./img/fields/img-01@x2.webp" srcset="./img/fields/img-01@x2.webp, ./img/fields/img-01@x2.webp 2x" alt="">
+              </picture>
+              <div class="fields__item-title">Добывающая промышленность</div>
+            </div>
+            <div class="fields__item"> 
+              <picture class="fields__item-img"> 
+                <source srcset="./img/fields/img-02.jpg, ./img/fields/img-02@x2.jpg 2x" type="jpg">
+                <source srcset="./img/fields/img-02.webp, ./img/fields/img-02@x2.webp 2x" type="webp"><img src="./img/fields/img-02@x2.webp" srcset="./img/fields/img-02@x2.webp, ./img/fields/img-02@x2.webp 2x" alt="">
+              </picture>
+              <div class="fields__item-title">Нефтегазовая отрасль</div>
+            </div>
+            <div class="fields__item"> 
+              <picture class="fields__item-img"> 
+                <source srcset="./img/fields/img-03.jpg, ./img/fields/img-03@x2.jpg 2x" type="jpg">
+                <source srcset="./img/fields/img-03.webp, ./img/fields/img-03@x2.webp 2x" type="webp"><img src="./img/fields/img-03@x2.webp" srcset="./img/fields/img-03@x2.webp, ./img/fields/img-03@x2.webp 2x" alt="">
+              </picture>
+              <div class="fields__item-title">Химическая отрасль</div>
+            </div>
+            <div class="fields__item"> 
+              <picture class="fields__item-img"> 
+                <source srcset="./img/fields/img-04.jpg, ./img/fields/img-04@x2.jpg 2x" type="jpg">
+                <source srcset="./img/fields/img-04.webp, ./img/fields/img-04@x2.webp 2x" type="webp"><img src="./img/fields/img-04@x2.webp" srcset="./img/fields/img-04@x2.webp, ./img/fields/img-04@x2.webp 2x" alt="">
+              </picture>
+              <div class="fields__item-title">Электроэнергетика</div>
+            </div>
+            <div class="fields__item"> 
+              <picture class="fields__item-img"> 
+                <source srcset="./img/fields/img-05.jpg, ./img/fields/img-05@x2.jpg 2x" type="jpg">
+                <source srcset="./img/fields/img-05.webp, ./img/fields/img-05@x2.webp 2x" type="webp"><img src="./img/fields/img-05@x2.webp" srcset="./img/fields/img-05@x2.webp, ./img/fields/img-05@x2.webp 2x" alt="">
+              </picture>
+              <div class="fields__item-title">Машиностроение</div>
+            </div>
+            <div class="fields__item"> 
+              <picture class="fields__item-img"> 
+                <source srcset="./img/fields/img-06.jpg, ./img/fields/img-06@x2.jpg 2x" type="jpg">
+                <source srcset="./img/fields/img-06.webp, ./img/fields/img-06@x2.webp 2x" type="webp"><img src="./img/fields/img-06@x2.webp" srcset="./img/fields/img-06@x2.webp, ./img/fields/img-06@x2.webp 2x" alt="">
+              </picture>
+              <div class="fields__item-title">Металлургия</div>
+            </div>
+            <div class="fields__item"> 
+              <picture class="fields__item-img"> 
+                <source srcset="./img/fields/img-07.jpg, ./img/fields/img-07@x2.jpg 2x" type="jpg">
+                <source srcset="./img/fields/img-07.webp, ./img/fields/img-07@x2.webp 2x" type="webp"><img src="./img/fields/img-07@x2.webp" srcset="./img/fields/img-07@x2.webp, ./img/fields/img-07@x2.webp 2x" alt="">
+              </picture>
+              <div class="fields__item-title">Транспорт</div>
+            </div>
+            <div class="fields__item"> 
+              <picture class="fields__item-img"> 
+                <source srcset="./img/fields/img-08.jpg, ./img/fields/img-08@x2.jpg 2x" type="jpg">
+                <source srcset="./img/fields/img-08.webp, ./img/fields/img-08@x2.webp 2x" type="webp"><img src="./img/fields/img-08@x2.webp" srcset="./img/fields/img-08@x2.webp, ./img/fields/img-08@x2.webp 2x" alt="">
+              </picture>
+              <div class="fields__item-title">Индивидуальные задачи</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="advantages section-top-round section-white"> 
+        <div class="container"> 
+          <div class="advantages__inner"> 
+            <h2 class="advantages__title h2">Преимущества</h2>
+            <div class="advantages__list"> 
+              <div class="advantages__item"> 
+                <div class="advantages__item-num">-01</div>
+                <div class="advantages__item-title">Опыт</div>
+                <div class="advantages__item-desc">Компания «ТЕГИРА» образована специалистами с более чем 10-летним опытом работы на рынке слесарного инструмента и гидравлического оборудования.</div>
+              </div>
+              <div class="advantages__item"> 
+                <div class="advantages__item-num">-02</div>
+                <div class="advantages__item-title">Новые технологии</div>
+                <div class="advantages__item-desc">Внедрение новейших технологий является непременным условием работы наших специалистов. </div>
+              </div>
+              <div class="advantages__item"> 
+                <div class="advantages__item-num">-03</div>
+                <div class="advantages__item-title">Индивидуальный подход</div>
+                <div class="advantages__item-desc">Каждое предприятие уникально, поэтому мы всегда находим индивидуальные решения на условиях оптимального соотношения временных, трудовых и финансовых затрат.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="service"> 
+        <div class="container">
+          <div class="service__inner">
+            <div class="service__content"> 
+              <picture class="service__img"> 
+                <source srcset="./img/service/service-sm@x2.webp" media="(max-width: 560px)"><img src="./img/service/service@x2.webp" alt="">
+              </picture>
+              <div class="service__info"> 
+                <h2 class="service__title h2">Сервис</h2>
+                <div class="service__desc">Услуги, предлагаемые нашей компанией, включают не только технические консультации и подбор инструмента и оборудования под ваши потребности, но также ремонт и обслуживание, калибровку и поверку поставляемого или находящегося в распоряжении заказчика оборудования. </div><a class="service__btn btn btn--outline btn--icon-right">Подробнее
+                      <svg width="40" height="40">
+                        <use xlink:href="img/icons/icons.svg#arrow"></use>
+                      </svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="order section-white"> 
+        <div class="container">
+          <div class="order__wrapper"> 
+            <picture class="order__img"> <picture><source srcset="./img/order/order@x2.webp" type="image/webp"><img src="./img/order/order@x2.webp" alt=""></picture></picture>
+            <div class="order__main"> 
+              <h2 class="order__title h2">Запрос на расчет</h2>
+              <div class="order__desc">Lorem ipsum dolor sit amet consectetur. Odio elit congue amet molestie viverra mattis porttitor amet.</div>
+              <form class="order__form" action="#">
+                <div class="form-group"> 
+                  <label class="form-label" for="#">Ваше имя</label>
+                  <input class="form-control" type="text" placeholder="Введите имя">
+                </div>
+                <div class="form-group"> 
+                  <label class="form-label" for="#">Телефон</label>
+                  <input class="form-control" type="text" placeholder="+7(___)___-__-__">
+                </div>
+                <div class="form-group"> 
+                  <label class="form-label" for="#">Комментарий</label>
+                  <textarea class="form-control" name="" placeholder="Наберите сообщение.."></textarea>
+                </div>
+                <div class="form-agreement">Нажимая кнопку «Отправить», вы соглашаетесь с Политикой конфиденциальности.</div>
+                <button class="form-btn btn btn--border btn--icon-right" type="submit">Заказать звонок
+                      <svg width="40" height="40">
+                        <use xlink:href="img/icons/icons.svg#arrow"></use>
+                      </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts section-white"> 
+        <div class="container"> 
+          <h2 class="contacts__title h2">Контакты</h2>
+          <div class="contacts__content"> 
+            <div class="contacts__info"> 
+              <div class="contacts__item"> 
+                <div class="contacts__item-icon"> 
+                      <svg width="40" height="40">
+                        <use xlink:href="img/icons/icons.svg#phone"></use>
+                      </svg>
+                </div>
+                <div class="contacts__item-desc"> <span>Телефон</span><a href="tel:+78003331316">8 (800) 333-13-16</a></div>
+              </div>
+              <div class="contacts__item"> 
+                <div class="contacts__item-icon"> 
+                      <svg width="40" height="40">
+                        <use xlink:href="img/icons/icons.svg#mail"></use>
+                      </svg>
+                </div>
+                <div class="contacts__item-desc"> <span>Email</span><a href="mailto:info@tegira.ru">info@tegira.ru</a></div>
+              </div>
+              <div class="contacts__item"> 
+                <div class="contacts__item-icon"> 
+                      <svg width="40" height="40">
+                        <use xlink:href="img/icons/icons.svg#pin"></use>
+                      </svg>
+                </div>
+                <div class="contacts__item-desc"> <span>Адрес</span>
+                  <p>г. Санкт-Петербург, пр. Юрия Гагарина, д.2 лит. А, пом. 11-Н, ком. 28</p>
+                </div>
+              </div>
+            </div>
+            <div class="contacts__map"> 
+              <div class="map"> </div><picture><source srcset="./img/contacts/map.webp" type="image/webp"><img src="./img/contacts/map.webp" alt=""></picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"> 
+      <div class="container"> 
+        <div class="footer__wrapper"> 
+          <div class="footer__main"> <a class="footer__logo" href="#"><img src="./img/logo.svg" alt=""></a>
+            <div class="footer__contacts"> <span>Связаться с нами:</span><a href="tel:+78003331316">8 (800) 333-13-16</a><a href="mailto:info@tegira.ru">info@tegira.ru</a></div>
+          </div>
+          <div class="footer__catalog"> <span>Каталог</span><a href="#">Обслуживание болтовых соединений</a><a href="#">Искробезопасный инструмент</a><a href="#">Промышленная мебель</a><a href="#">Слесарно-монтажный инструмент</a></div>
+          <div class="footer__nav"><span>О компании</span>
+            <ul>
+              <li>        <a href="#">О нас</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Сервис</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Документы</a></li>
+            </ul>
+          </div>
+          <div class="footer__bottom"> 
+            <div class="footer__company">© 2022-2024 Tegira</div>
+            <div class="footer__documents"><a class="footer__policy" href="">Политика конфиденциальности</a><a class="footer__agreement" href="">Пользовательское соглашение </a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

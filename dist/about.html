@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/style.css" rel="stylesheet">
+      <title>О нас</title>
+    </head>
+  <body>
+    <header class="header"> 
+      <div class="container"> 
+        <div class="header__wrapper"> <a class="header__logo" href=""><img src="./img/logo-black.svg" alt=""></a>
+          <div class="header__search searchbar">
+            <input class="searchbar__input" type="text" placeholder="Поиск...">
+            <button class="searchbar__btn">
+                  <svg width="29" height="29">
+                    <use xlink:href="img/icons/icons.svg#loup"></use>
+                  </svg>
+            </button>
+          </div>
+          <button class="header__burger js-menu-open" type="button"><span> </span></button>
+        </div>
+      </div>
+      <div class="header-menu js-menu"> 
+        <button class="header-menu__close js-menu-close" type="button"> 
+              <svg width="30" height="30">
+                <use xlink:href="img/icons/icons.svg#cross"></use>
+              </svg>
+        </button>
+        <nav class="header-menu__nav"> 
+          <ul class="header-menu__list"> 
+            <li class="header-menu__item"> <a href="#">Каталог продукции</a>
+              <ul class="header-menu__inner-list"> 
+                <li class="header-menu__inner-item"> <a href="">Обслуживание болтовых соединений</a></li>
+                <li class="header-menu__inner-item"> <a href="">Искробезопасный инструмент</a></li>
+                <li class="header-menu__inner-item"> <a href="">Промышленная мебель</a></li>
+                <li class="header-menu__inner-item"> <a href="">Слесарно-монтажный инструмент</a></li>
+              </ul>
+            </li>
+            <li class="header-menu__item"> <a href="#">Сервис</a></li>
+            <li class="header-menu__item"> <a href="#">О компании</a></li>
+            <li class="header-menu__item"> <a href="#">Новости</a></li>
+            <li class="header-menu__item"> <a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-menu__contacts"> 
+          <div class="header-menu__contacts-links">
+            <div class="header-menu__contacts-item"><span>Телефон для связи:</span><a href="tel:+78003331316">8 (800) 333-13-16</a></div>
+            <div class="header-menu__contacts-item"><span>Почта для связи:</span><a href="mailto:info@tegira.ru">info@tegira.ru</a></div>
+          </div><a class="header-menu__contacts-btn btn btn--wide" href="#"> <span>Связаться с нами</span>
+                <svg width="40" height="40">
+                  <use xlink:href="img/icons/icons.svg#arrow"></use>
+                </svg></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="about-hero"> 
+        <div class="container">
+          <div class="about-hero__wrapper">
+            <picture class="about-hero__img"> <picture><source srcset="./img/hero/about-hero.webp" type="image/webp"><img src="./img/hero/about-hero.webp" alt=""></picture></picture>
+            <div class="about-hero__info"> 
+              <h1 class="about-hero__title">Мы можем вывести ваш бизнес на новый уровень </h1>
+              <div class="about-hero__contacts contacts-us"><a class="contacts-us__tel" href="#"><span class="contacts-us__tel-icon">
+                        <svg width="24" height="24">
+                          <use xlink:href="img/icons/icons.svg#tel"></use>
+                        </svg></span><span class="contacts-us__tel-number">Связаться с нами</span></a><a class="contacts-us__link" href="#">
+                      <svg width="24" height="24">
+                        <use xlink:href="img/icons/icons.svg#telegram"></use>
+                      </svg></a><a class="contacts-us__link" href="#">
+                      <svg width="24" height="24">
+                        <use xlink:href="img/icons/icons.svg#whatsapp"></use>
+                      </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="about-company section"> 
+        <div class="container"> 
+          <div class="about-company__wrapper">
+            <div class="about-company__head"> 
+              <h2 class="about-company__title h2">Компания «ТЕГИРА»</h2>
+              <div class="about-company__desc">
+                образованная техническими специалистами  <span>с более чем 10-летним опытом работы в сфере обслуживания</span>
+                болтовых и фланцевых 
+                соединений на промышленных предприятиях России, предлагает оборудование, 
+                выпускаемое под торговой маркой teho:
+              </div>
+            </div>
+            <div class="about-company__equipments">
+              <div class="about-company__equipment">
+                <picture class="about-company__equipment-img"><picture><source srcset="./img/about/equipment-01.webp" type="image/webp"><img src="./img/about/equipment-01.webp" alt=""></picture></picture>
+                <div class="about-company__equipment-title">Гидравлическое оборудование</div>
+              </div>
+              <div class="about-company__equipment">
+                <picture class="about-company__equipment-img"><picture><source srcset="./img/about/equipment-02.webp" type="image/webp"><img src="./img/about/equipment-02.webp" alt=""></picture></picture>
+                <div class="about-company__equipment-title">Пневматическое оборудование</div>
+              </div>
+              <div class="about-company__equipment">
+                <picture class="about-company__equipment-img"><picture><source srcset="./img/about/equipment-03.webp" type="image/webp"><img src="./img/about/equipment-03.webp" alt=""></picture></picture>
+                <div class="about-company__equipment-title">Электрическое оборудование</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section about-techo"> 
+        <div class="container">
+          <div class="about-techo__inner">
+            <h2 class="about-techo__title h2">Оборудование teho представляет собой оптимальное сочетание точности, надёжности, удобства в работе, долговечности и доступной цены.</h2>
+            <div class="about-techo__desc">Предлагаемое оборудование разработано с учётом мирового опыта работ по обслуживанию болтовых соединений и воплощает лучшие конструкторские разработки и современные подходы к обслуживанию ответственного крепежа.</div>
+          </div>
+        </div>
+      </section>
+      <section class="section about-production"> 
+        <div class="container">
+          <div class="about-production__content"> 
+            <picture class="about-production__img"> <picture><source srcset="./img/about/production.webp" type="image/webp"><img src="./img/about/production.webp" alt=""></picture></picture>
+            <div class="about-production__info">
+              <h2 class="about-production__title h2">Продукция</h2>
+              <div class="about-production__desc">
+                Помимо специального оборудования для обслуживания болтовых соединений компания предлагает своим заказчикам ручной слесарно-монтажный инструмент, включающий широкий ассортимент:</div>
+              <div class="about-production__list"> 
+                <div class="about-production__item"> 
+                  <picture class="about-production__item-img"> <picture><source srcset="./img/about/production-01.webp" type="image/webp"><img src="./img/about/production-01.webp" alt=""></picture></picture>
+                  <div class="about-production__item-name">Гаечные ключи</div>
+                </div>
+                <div class="about-production__item"> 
+                  <picture class="about-production__item-img"> <picture><source srcset="./img/about/production-01.webp" type="image/webp"><img src="./img/about/production-01.webp" alt=""></picture></picture>
+                  <div class="about-production__item-name">Гаечные ключи</div>
+                </div>
+                <div class="about-production__item"> 
+                  <picture class="about-production__item-img"> <picture><source srcset="./img/about/production-01.webp" type="image/webp"><img src="./img/about/production-01.webp" alt=""></picture></picture>
+                  <div class="about-production__item-name">Гаечные ключи</div>
+                </div>
+                <div class="about-production__item"> 
+                  <picture class="about-production__item-img"> <picture><source srcset="./img/about/production-01.webp" type="image/webp"><img src="./img/about/production-01.webp" alt=""></picture></picture>
+                  <div class="about-production__item-name">Гаечные ключи</div>
+                </div>
+                <div class="about-production__item"> 
+                  <picture class="about-production__item-img"> <picture><source srcset="./img/about/production-01.webp" type="image/webp"><img src="./img/about/production-01.webp" alt=""></picture></picture>
+                  <div class="about-production__item-name">Гаечные ключи</div>
+                </div>
+                <div class="about-production__item"> 
+                  <picture class="about-production__item-img"> <picture><source srcset="./img/about/production-01.webp" type="image/webp"><img src="./img/about/production-01.webp" alt=""></picture></picture>
+                  <div class="about-production__item-name">Гаечные ключи</div>
+                </div>
+              </div>
+              <div class="about-production__text">для промышленных предприятий, мастерских и сервисных компаний, занимающихся обслуживанием производств и проведением ремонтных работ.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section about-device"> 
+        <div class="container">
+          <div class="about-device__head">
+            <div class="about-device__title h2">Компания «ТЕГИРА» также представляет искробезопасный коррозионностойкий промышленный инструмент teho</div>
+            <div class="about-device__desc">
+              Используются <span>во взрыво- и пожароопасных средах</span>, где условиями и требованиями безопасности продиктовано использование 
+              специального инструмента, не являющегося источником опасности возгорания 
+              взрыво- и пожароопасных газовоздушных и пылевоздушных смесей.
+            </div>
+          </div>
+          <picture class="about-device__img"> <picture><source srcset="./img/about/device.webp" type="image/webp"><img src="./img/about/device.webp" alt=""></picture></picture>
+        </div>
+      </section>
+      <section class="section about-storage"> 
+        <div class="container">
+          <div class="about-storage__head"> 
+            <h2 class="about-storage__title h2">Промышленная мебель и средства хранения</h2>
+            <div class="about-storage__desc">
+              Верстаки, тележки, шкафы, а также инструментальные ящики, разработанные с учётом опыта применения в условиях промышленных предприятий, 
+              позволяют организовать рабочее пространство, 
+              <span>повысить эффективность труда и срок службы применяемых инструментов.</span>
+            </div>
+          </div>
+          <div class="about-storage__images"> 
+            <picture class="about-storage__img"> <picture><source srcset="./img/about/storage-01.webp" type="image/webp"><img src="./img/about/storage-01.webp" alt=""></picture></picture>
+            <picture class="about-storage__img"> <picture><source srcset="./img/about/storage-02.webp" type="image/webp"><img src="./img/about/storage-02.webp" alt=""></picture></picture>
+          </div>
+        </div>
+      </section>
+      <section class="about-services section"> 
+        <div class="container">
+          <div class="about-services__head"> 
+            <h2 class="about-services__title h2">Услуги и сервис</h2>
+            <div class="about-services__desc">
+              «ТЕГИРА» оказывает услуги по квалифицированному обслуживанию болтовых и фланцевых соединений силами специалистов 
+              компании на объекте заказчика. Подробнее о всех услугах компании 
+              можно ознакомиться в разделе Сервис.
+            </div>
+          </div>
+          <div class="about-services__list"> 
+            <div class="about-services__item"> 
+              <picture class="about-services__item-img"> <picture><source srcset="./img/about/services-01.webp" type="image/webp"><img src="./img/about/services-01.webp" alt=""></picture></picture>
+              <div class="about-services__item-title">Технические консультации</div>
+            </div>
+            <div class="about-services__item"> 
+              <picture class="about-services__item-img"> <picture><source srcset="./img/about/services-02.webp" type="image/webp"><img src="./img/about/services-02.webp" alt=""></picture></picture>
+              <div class="about-services__item-title">Подбор инструмента и оборудования</div>
+            </div>
+            <div class="about-services__item"> 
+              <picture class="about-services__item-img"> <picture><source srcset="./img/about/services-03.webp" type="image/webp"><img src="./img/about/services-03.webp" alt=""></picture></picture>
+              <div class="about-services__item-title">Ремонт</div>
+            </div>
+            <div class="about-services__item"> 
+              <picture class="about-services__item-img"> <picture><source srcset="./img/about/services-04.webp" type="image/webp"><img src="./img/about/services-04.webp" alt=""></picture></picture>
+              <div class="about-services__item-title">Обслуживание</div>
+            </div>
+            <div class="about-services__item"> 
+              <picture class="about-services__item-img"> <picture><source srcset="./img/about/services-05.webp" type="image/webp"><img src="./img/about/services-05.webp" alt=""></picture></picture>
+              <div class="about-services__item-title">Калибровка и проверка оборудования</div>
+            </div>
+            <div class="about-services__item"> 
+              <picture class="about-services__item-img"> <picture><source srcset="./img/about/services-06.webp" type="image/webp"><img src="./img/about/services-06.webp" alt=""></picture></picture>
+              <div class="about-services__item-title">Аренда инструментов</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"> 
+      <div class="container"> 
+        <div class="footer__wrapper"> 
+          <div class="footer__main"> <a class="footer__logo" href="#"><img src="./img/logo.svg" alt=""></a>
+            <div class="footer__contacts"> <span>Связаться с нами:</span><a href="tel:+78003331316">8 (800) 333-13-16</a><a href="mailto:info@tegira.ru">info@tegira.ru</a></div>
+          </div>
+          <div class="footer__catalog"> <span>Каталог</span><a href="#">Обслуживание болтовых соединений</a><a href="#">Искробезопасный инструмент</a><a href="#">Промышленная мебель</a><a href="#">Слесарно-монтажный инструмент</a></div>
+          <div class="footer__nav"><span>О компании</span>
+            <ul>
+              <li>        <a href="#">О нас</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Сервис</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Документы</a></li>
+            </ul>
+          </div>
+          <div class="footer__bottom"> 
+            <div class="footer__company">© 2022-2024 Tegira</div>
+            <div class="footer__documents"><a class="footer__policy" href="">Политика конфиденциальности</a><a class="footer__agreement" href="">Пользовательское соглашение </a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

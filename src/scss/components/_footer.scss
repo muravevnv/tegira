@@ -1,0 +1,188 @@
+.footer {
+  padding: 10px 0;
+
+  &__wrapper {
+    background: linear-gradient(90deg, #484D55 0%, #3A4049 100%);
+    color: var(--color-whte);
+    border-radius: 30px;
+    padding: 30px 30px 14px 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 500;
+
+    @include media(lg) {
+      padding: 30px 20px 14px 20px;
+      font-size: 16px;
+    }
+
+    @include media(md) {
+      border-radius: 20px;
+      padding-bottom: 26px;
+    }
+  }
+
+  &__main {
+    max-width: 350px;
+    width: 100%;
+
+    @include media(lg) {
+      max-width: 243px;
+    }
+
+    @include media(md) {
+      max-width: 100%;
+      margin-bottom: 26px;
+    }
+
+    @include media(sm) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__logo {
+    display: block;
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    @include media(lg) {
+      width: 243px;
+      margin-bottom: 26px;
+    }
+  }
+
+  &__contacts {
+
+
+    @include media(sm) {
+      margin-top: 26px;
+      padding-top: 26px;
+      border-top: 1px solid rgba(255, 255, 255, .15);
+    }
+
+    span {
+      display: block;
+      opacity: .5;
+    }
+
+    a {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+
+  &__catalog {
+    max-width: 340px;
+    width: 100%;
+    margin: 0 136px 0 auto;
+
+    @include media(md) {
+      margin-left: 0;
+    }
+    
+    @include media(sm) {
+      margin: 0;
+      max-width: 100%;
+      margin-top: 26px;
+      padding-top: 26px;
+      border-top: 1px solid rgba(255, 255, 255, .15);
+    }
+
+    span {
+      display: block;
+      opacity: .5;
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: block;
+      margin-top: 14px;
+    }
+  }
+
+  &__nav {
+    max-width: 110px;
+    width: 100%;
+    text-align: right;
+
+    @include media(sm) {
+      max-width: 100%;
+      margin-top: 26px;
+      padding-top: 26px;
+      align-items: flex-start;
+      border-top: 1px solid rgba(255, 255, 255, .15);
+      text-align: left;
+    }
+
+    span {
+      display: block;
+      opacity: .5;
+      margin-bottom: 6px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      @include media(sm) {
+        max-width: 300px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 14px;
+      }
+    }
+
+    li {
+      margin-top: 14px;
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    padding: 14px 0;
+    border-top: 1px solid rgba(255, 255, 255, .15);
+
+    @include media(md) {
+      padding: 0;
+      margin-top: 26px;
+      padding-top: 26px;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    > * {
+      opacity: .7;
+    }
+  }
+
+  &__company {
+
+    @include media(md) {
+      width: 100%;
+      padding-top: 26px;
+      margin-top: 26px;
+      border-top: 1px solid rgba(255, 255, 255, .15);
+    }
+  }
+
+  &__documents {
+    display: flex;
+    align-items: center;
+    gap: 74px;
+    margin: 0 0 0 auto;
+
+    @include media(md) {
+      flex-direction: column;
+      margin: 0;
+      align-items: flex-start;
+      gap: 14px;
+    }
+  }
+}

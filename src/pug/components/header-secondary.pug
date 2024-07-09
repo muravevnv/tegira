@@ -1,0 +1,46 @@
+header.header.header--secondary 
+  .container 
+    .header__wrapper 
+      a.header__logo(href="")
+        img(src="./img/logo.svg", alt="")
+      .header__search.searchbar
+        input.searchbar__input(type="text" placeholder="Поиск...")
+        button.searchbar__btn
+          +svg(29, 29, 'loup')
+      button(type="button").header__burger.js-menu-open
+        span  
+  .header-menu.js-menu 
+    button(type="button").header-menu__close.js-menu-close 
+      +svg(30, 30, 'cross')
+    nav.header-menu__nav 
+      ul.header-menu__list 
+        li.header-menu__item 
+          a(href="#") Каталог продукции
+          ul.header-menu__inner-list 
+            li.header-menu__inner-item 
+              a(href="") Обслуживание болтовых соединений
+            li.header-menu__inner-item 
+              a(href="") Искробезопасный инструмент
+            li.header-menu__inner-item 
+              a(href="") Промышленная мебель
+            li.header-menu__inner-item 
+              a(href="") Слесарно-монтажный инструмент
+        li.header-menu__item 
+          a(href="#") Сервис
+        li.header-menu__item 
+          a(href="#") О компании
+        li.header-menu__item 
+          a(href="#") Новости
+        li.header-menu__item 
+          a(href="#") Контакты
+    .header-menu__contacts 
+      .header-menu__contacts-links
+        .header-menu__contacts-item
+          span Телефон для связи:
+          a(href="tel:+78003331316") 8 (800) 333-13-16
+        .header-menu__contacts-item
+          span Почта для связи:
+          a(href="mailto:info@tegira.ru") info@tegira.ru
+      a.header-menu__contacts-btn.btn.btn--wide(href="#") 
+        span Связаться с нами
+        +svg(40, 40, 'arrow')
