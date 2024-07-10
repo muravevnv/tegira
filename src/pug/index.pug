@@ -4,15 +4,24 @@ html(lang="en")
   +head('Главная')
   body
     include mixins/_mixins
-    include components/header-secondary
+    include components/header
     main
-      include blocks/hero/index
-      include blocks/categories/index
-      include blocks/help/index
-      include blocks/fields/index
-      include blocks/advantages/index
-      include blocks/service/index
-      include blocks/order/index
-      include blocks/contacts/index
+      .container.container--sm 
+        ul 
+          li 
+            a(href="home.html") Главная
+          li 
+            a(href="about.html") О нас
+          li 
+            a(href="catalog.html") Каталог
+          li 
+            a(href="product.html") Карточка товара
+          li 
+            a(href="blog.html") Новости
+          li 
+            a(href="article.html") Статья
+          li 
+            a(href="contacts.html") Контакты
+
     include components/footer
     include includes/scripts

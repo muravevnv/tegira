@@ -377,3 +377,13 @@ select {
     }
   }
 }
+
+.default-hover {
+
+  @media(any-hover: hover) {
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}

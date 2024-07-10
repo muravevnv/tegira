@@ -107,3 +107,43 @@ if(modalBtn.length) {
     });
   });
 }
+
+const productMoreBlock = document.querySelector('.js-product-more-info');
+
+if(productMoreBlock) {
+  const productMoreBtn = document.querySelector('.js-product-more-toggle');
+
+  productMoreBtn.addEventListener('click', () => {
+    productMoreBtn.classList.toggle('is-show')
+    productMoreBlock.classList.toggle('is-open');
+  });
+}
+
+const map = document.querySelector('.js-map');
+
+if(map) {
+
+  const mapScript = document.createElement("script");
+  mapScript.src = 'https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU';
+  document.body.appendChild(mapScript);
+
+  mapScript.addEventListener("load", () => {
+    ymaps.ready(function () {
+      var myMap = new ymaps.Map(map, {
+        center: [59.938049, 30.318556], // Координаты метки в Санкт-Петербурге
+        zoom: 13
+      });
+    
+      var myPlacemark = new ymaps.Placemark([59.938049, 30.318556], {
+        hintContent: 'Метка в Санкт-Петербурге'
+      }, {
+        iconLayout: 'default#image',
+        iconImageSize: [28, 32],
+        iconImageOffset: [-14, -14]
+      });
+    
+      myMap.geoObjects.add(myPlacemark);
+    }); 
+  });
+}
+

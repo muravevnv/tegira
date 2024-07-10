@@ -1,4 +1,5 @@
 .product {
+  position: relative;
  
   &__title {
     font-size: 40px;
@@ -15,7 +16,7 @@
 
   &__content {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 30px;
 
     @include media(sm) {
@@ -100,6 +101,8 @@
   &__info {
     max-width: 610px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 
     &-controls {
       display: flex;
@@ -117,6 +120,37 @@
         }
       }
     }
+
+    &-more {
+      position: static;
+      padding-top: 30px;
+      margin: auto 0 0 0;
+      display: inline-block;
+      text-align: left;
+      font-weight: 600;
+
+      &-show {
+        display: block;
+      }
+
+      &-hide {
+        display: none;
+      }
+
+      &.is-show {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        .product__info-more-show {
+          display: none;
+        }
+
+        .product__info-more-hide {
+          display: block;
+        }
+      }
+    }
   }
 
   &__detail {
@@ -129,6 +163,12 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    display: none;
+
+    &.is-open {
+      display: flex;
+      padding-bottom: 55px;
+    }
 
     @include media(sm)  {
       gap: 20px;
