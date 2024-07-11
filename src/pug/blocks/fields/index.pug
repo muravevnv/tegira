@@ -40,9 +40,9 @@ section.fields.section.section-grey
       h2.fields__title.h2 Сферы применения
     .fields__list 
       for item in fieldsList
-        .fields__item 
+        a(href="#").fields__item 
           picture.fields__item-img 
             source(srcset=`./img/fields/img-0${item.id}.jpg, ./img/fields/img-0${item.id}@x2.jpg 2x` type="jpg")
             source(srcset=`./img/fields/img-0${item.id}.webp, ./img/fields/img-0${item.id}@x2.webp 2x` type="webp")
             img(src=`./img/fields/img-0${item.id}@x2.webp` srcset=`./img/fields/img-0${item.id}@x2.webp, ./img/fields/img-0${item.id}@x2.webp 2x`, alt="")
-          .fields__item-title= item.title
+          span.fields__item-title= item.title

@@ -1,8 +1,8 @@
 @import 'libs/swiper';
 
 //Config
-@import 'config/variables';
 @import 'config/mixins';
+@import 'config/variables';
 @import 'config/reset';
 @import 'config/fonts';
 @import 'config/global';
@@ -30,6 +30,7 @@
 @import 'sections/contacts';
 @import 'sections/similar';
 @import 'sections/our-contacts';
+@import 'sections/latest-news';
 
 //Pages
 @import 'pages/blog';

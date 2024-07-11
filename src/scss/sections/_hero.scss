@@ -53,6 +53,10 @@
   &__info {
     max-width: 687px;
     width: 100%;
+
+    @include media(md) {
+      padding-left: 14px;
+    }
   }
 
   &__main {
@@ -225,6 +229,7 @@
 
     &-title {
       font-size: 28px;
+      line-height: 1;
     }
 
     &-category {
@@ -307,6 +312,7 @@
     overflow: hidden;
 
     &-img {
+      max-width: 174px;
       display: block;
       margin: 0 0 -12px -14px;
 

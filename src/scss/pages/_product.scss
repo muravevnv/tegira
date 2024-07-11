@@ -27,6 +27,11 @@
   &__gallery {
     max-width: 530px;
     width: 100%;
+    flex-shrink: 0;
+
+    @media(max-width: 1439px) {
+      flex-shrink: initial;
+    }
 
     @include media(sm)  {
       max-width: 100%;

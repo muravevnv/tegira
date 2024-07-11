@@ -47,5 +47,13 @@
     padding: 11px 15px;
     font-size: 14px;
     transition: var(--transition);
+
+    a {
+      @media(any-hover: hover) {
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
   }
 }

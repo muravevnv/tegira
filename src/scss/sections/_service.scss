@@ -11,6 +11,10 @@
     @include media(md) {
       padding: 0 20px;
     }
+
+    @include media(sm) {
+      padding: 0;
+    }
   }
 
   &__content {

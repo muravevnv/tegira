@@ -65,7 +65,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid var(--color-blck);
+      border: 1px solid cl(blck, .5);
       color: var(--color-blck);
       border-radius: 50%;
       flex-shrink: 0;
@@ -76,6 +76,7 @@
     }
 
     &-desc {
+      opacity: .7;
 
       @include media(md)  {
         font-size: 13px;
@@ -85,6 +86,7 @@
         display: block;
         font-size: 14px;
         margin-bottom: 6px;
+
 
         @include media(md)  {
           font-size: 13px;

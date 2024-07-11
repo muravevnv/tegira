@@ -119,6 +119,16 @@ if(productMoreBlock) {
   });
 }
 
+const categoriesBlock = document.querySelectorAll('.js-categories-block');
+
+if(categoriesBlock || window.matchMedia("(max-width: 992px)").matches) {
+  categoriesBlock.forEach((block) => {
+    block.addEventListener('click', function() {
+      block.classList.toggle('is-open');
+    })
+  });
+}
+
 const map = document.querySelector('.js-map');
 
 if(map) {

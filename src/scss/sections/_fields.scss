@@ -50,6 +50,16 @@
       background: linear-gradient(190.59deg, rgba(29, 33, 39, 0) 7.88%, rgba(29, 33, 39, 0.4) 95.32%);
     }
 
+
+    @media(any-hover: hover) {
+
+      &:hover {
+        .fields__item-img {
+          transform: scale(1.1);
+        }
+      }
+    }
+
     @include media(md)  {
       height: 240px;
       padding: 10px;
@@ -67,6 +77,8 @@
       height: 100%;
       display: block;
       z-index: 1;
+      transform: scale(1);
+      transition: var(--transition);
 
       img {
         width: 100%;
