@@ -95,6 +95,15 @@
     }
   }
 
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 500;
+
+    @include media(md) {
+      font-size: 18px;
+    }
+  }
+
   &__date {
     margin-top: 10px;
     opacity: .5;
@@ -105,6 +114,31 @@
 
     p + p {
       margin-top: 16px;
+    }
+  }
+
+  &__list {
+    
+    li {
+      position: relative;
+      font-size: 16px;
+      padding-left: 24px;
+      opacity: .7;
+      
+      &::before {
+        position: absolute;
+        content: '';
+        width: 4px;
+        height: 4px;
+        background-color: currentColor;
+        border-radius: 50%;
+        top: 10px;
+        left: 8px;
+      }
+
+      &:not(:last-of-type) {
+        margin-bottom: 16px;
+      }
     }
   }
 

@@ -5,9 +5,19 @@ footer.footer
         a.footer__logo(href="#")
           img(src="./img/logo.svg", alt="")
         .footer__contacts 
-          span Связаться с нами:
-          a(href="tel:+78003331316") 8 (800) 333-13-16
-          a(href="mailto:info@tegira.ru") info@tegira.ru
+          .footer__contacts-item
+            .footer__contacts-item-label Связаться с нами:
+            .footer__contacts-item-links
+              a(href="tel:+78003331316") 8 (800) 333-13-16
+              a(href="mailto:info@tegira.ru") info@tegira.ru
+          .footer__contacts-item  
+            .footer__contacts-item-label Мы в соц. сетях:
+            .footer__contacts-socials.socials 
+              a(href="").socials-link
+                img(src="./img/icons/youtube.svg", alt="") 
+              a(href="").socials-link
+                img(src="./img/icons/tg.svg", alt="") 
+          
       .footer__catalog 
         span Каталог
         a(href="#") Обслуживание болтовых соединений

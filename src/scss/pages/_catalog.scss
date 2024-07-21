@@ -156,15 +156,30 @@
 
     &__main {
       display: flex;
+      align-items: center;
       justify-content: center;
       position: relative;
       padding: 30px 14px 14px;
       border-radius: 20px;
       margin-bottom: 10px;
       background-color: rgb(58, 65, 74, .04);
+      height: 314px;
 
       @include media(md)  {
         margin-bottom: 6px;
+      }
+    }
+
+    &__img {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+      max-height: 270px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        display: block;
       }
     }
 

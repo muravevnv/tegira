@@ -12,12 +12,22 @@
       <div class="container"> 
         <div class="header__wrapper"> <a class="header__logo" href=""><img src="./img/logo-black.svg" alt=""></a>
           <div class="header__search searchbar">
-            <input class="searchbar__input" type="text" placeholder="Поиск...">
-            <button class="searchbar__btn">
-                  <svg width="29" height="29">
-                    <use xlink:href="img/icons/icons.svg#loup"></use>
-                  </svg>
-            </button>
+            <div class="searchbar__panel">
+              <input class="searchbar__input" type="text" placeholder="Поиск...">
+              <button class="searchbar__btn">
+                    <svg width="29" height="29">
+                      <use xlink:href="img/icons/icons.svg#loup"></use>
+                    </svg>
+              </button>
+            </div>
+            <div class="searchbar__result">
+              <div class="searchbar__result-section"> 
+                <div class="searchbar__result-section-list"><a class="searchbar__result-item" href="#">набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 </a><a class="searchbar__result-item" href="#">набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 </a><a class="searchbar__result-item" href="#">набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 </a></div><a class="searchbar__result-section-other" href="#">Остальные</a>
+              </div>
+              <div class="searchbar__result-section">
+                <div class="searchbar__result-section-list"><a class="searchbar__result-item" href="#">набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 </a><a class="searchbar__result-item" href="#">набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 </a><a class="searchbar__result-item" href="#">набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 </a></div><a class="searchbar__result-section-other" href="#">Остальные</a>
+              </div>
+            </div>
           </div>
           <button class="header__burger js-menu-open" type="button"><span> </span></button>
         </div>
@@ -46,6 +56,9 @@
         </nav>
         <div class="header-menu__contacts"> 
           <div class="header-menu__contacts-links">
+            <div class="header-menu__contacts-item"><span>Мы в соц. сетях:</span>
+              <div class="header-menu__contacts-socials socials"> <a class="socials-link" href=""><img src="./img/icons/youtube.svg" alt=""></a><a class="socials-link" href=""><img src="./img/icons/tg.svg" alt=""></a></div>
+            </div>
             <div class="header-menu__contacts-item"><span>Телефон для связи:</span><a href="tel:+78003331316">8 (800) 333-13-16</a></div>
             <div class="header-menu__contacts-item"><span>Почта для связи:</span><a href="mailto:info@tegira.ru">info@tegira.ru</a></div>
           </div><a class="header-menu__contacts-btn btn btn--wide" href="#"> <span>Связаться с нами</span>
@@ -179,6 +192,13 @@
                         <svg width="24" height="24">
                           <use xlink:href="img/icons/icons.svg#zoom"></use>
                         </svg></span></a>
+                <ul class="product__main-list"> 
+                  <li>Lorem ipsum dolor sit amet consectetur. Volutpat erat etiam proin id <a href="#">molestie elementum</a>. </li>
+                  <li>Tortor cras volutpat volutpat dictum. Volutpat erat <a href="#">etiam proin</a> id molestie elementum.  tellus morbi egestas sed cursus.</li>
+                  <li>Viverra ultrices a fermentum erat nulla commodo. Integer porttitor morbi varius amet senectus vitae. Ut tortor morbi nunc tellus morbi egestas sed cursus. Viverra nulla nibh aliquam nunc porta at. Tortor id lectus molestie amet diam fusce nibh congue. </li>
+                  <li>Viverra ultrices a fermentum erat nulla commodo. Volutpat erat etiam proin id molestie elementum.</li>
+                  <li>Integer porttitor morbi varius amet senectus vitae. Ut tortor morbi nunc </li>
+                </ul>
                 <div class="product__main-text">
                   <p>Lorem ipsum dolor sit amet consectetur. Tortor cras volutpat volutpat dictum. Nibh morbi a sed cras diam purus non convallis. Viverra ultrices a fermentum erat nulla commodo. Integer porttitor morbi varius amet senectus vitae. Ut tortor morbi nunc tellus morbi egestas sed cursus. Viverra nulla nibh aliquam nunc porta at. Tortor id lectus molestie amet diam fusce nibh congue. Enim purus nullam odio vulputate id eget posuere morbi. Volutpat erat etiam proin id molestie elementum.</p>
                   <p>Viverra ultrices a fermentum erat nulla commodo. Integer porttitor morbi varius amet senectus vitae. Ut tortor morbi nunc tellus morbi egestas sed cursus. Viverra nulla nibh aliquam nunc porta at. Tortor id lectus molestie amet diam fusce nibh congue. </p>
@@ -538,7 +558,16 @@
       <div class="container"> 
         <div class="footer__wrapper"> 
           <div class="footer__main"> <a class="footer__logo" href="#"><img src="./img/logo.svg" alt=""></a>
-            <div class="footer__contacts"> <span>Связаться с нами:</span><a href="tel:+78003331316">8 (800) 333-13-16</a><a href="mailto:info@tegira.ru">info@tegira.ru</a></div>
+            <div class="footer__contacts"> 
+              <div class="footer__contacts-item">
+                <div class="footer__contacts-item-label">Связаться с нами:</div>
+                <div class="footer__contacts-item-links"><a href="tel:+78003331316">8 (800) 333-13-16</a><a href="mailto:info@tegira.ru">info@tegira.ru</a></div>
+              </div>
+              <div class="footer__contacts-item"> 
+                <div class="footer__contacts-item-label">Мы в соц. сетях:</div>
+                <div class="footer__contacts-socials socials"> <a class="socials-link" href=""><img src="./img/icons/youtube.svg" alt=""></a><a class="socials-link" href=""><img src="./img/icons/tg.svg" alt=""></a></div>
+              </div>
+            </div>
           </div>
           <div class="footer__catalog"> <span>Каталог</span><a href="#">Обслуживание болтовых соединений</a><a href="#">Искробезопасный инструмент</a><a href="#">Промышленная мебель</a><a href="#">Слесарно-монтажный инструмент</a></div>
           <div class="footer__nav"><span>О компании</span>

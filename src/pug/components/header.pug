@@ -4,9 +4,23 @@ header.header
       a.header__logo(href="")
         img(src="./img/logo-black.svg", alt="")
       .header__search.searchbar
-        input.searchbar__input(type="text" placeholder="Поиск...")
-        button.searchbar__btn
-          +svg(29, 29, 'loup')
+        .searchbar__panel
+          input.searchbar__input(type="text" placeholder="Поиск...")
+          button.searchbar__btn
+            +svg(29, 29, 'loup')
+        .searchbar__result
+          .searchbar__result-section 
+            .searchbar__result-section-list
+              a.searchbar__result-item(href="#") набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 
+              a.searchbar__result-item(href="#") набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 
+              a.searchbar__result-item(href="#") набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 
+            a(href="#").searchbar__result-section-other Остальные
+          .searchbar__result-section
+            .searchbar__result-section-list
+              a.searchbar__result-item(href="#") набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 
+              a.searchbar__result-item(href="#") набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 
+              a.searchbar__result-item(href="#") набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 
+            a(href="#").searchbar__result-section-other Остальные
       button(type="button").header__burger.js-menu-open
         span  
   .header-menu.js-menu 
@@ -35,6 +49,13 @@ header.header
           a(href="#") Контакты
     .header-menu__contacts 
       .header-menu__contacts-links
+        .header-menu__contacts-item
+          span Мы в соц. сетях:
+          .header-menu__contacts-socials.socials 
+              a(href="").socials-link
+                img(src="./img/icons/youtube.svg", alt="") 
+              a(href="").socials-link
+                img(src="./img/icons/tg.svg", alt="") 
         .header-menu__contacts-item
           span Телефон для связи:
           a(href="tel:+78003331316") 8 (800) 333-13-16

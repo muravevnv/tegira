@@ -12,12 +12,22 @@
       <div class="container"> 
         <div class="header__wrapper"> <a class="header__logo" href=""><img src="./img/logo-black.svg" alt=""></a>
           <div class="header__search searchbar">
-            <input class="searchbar__input" type="text" placeholder="Поиск...">
-            <button class="searchbar__btn">
-                  <svg width="29" height="29">
-                    <use xlink:href="img/icons/icons.svg#loup"></use>
-                  </svg>
-            </button>
+            <div class="searchbar__panel">
+              <input class="searchbar__input" type="text" placeholder="Поиск...">
+              <button class="searchbar__btn">
+                    <svg width="29" height="29">
+                      <use xlink:href="img/icons/icons.svg#loup"></use>
+                    </svg>
+              </button>
+            </div>
+            <div class="searchbar__result">
+              <div class="searchbar__result-section"> 
+                <div class="searchbar__result-section-list"><a class="searchbar__result-item" href="#">набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 </a><a class="searchbar__result-item" href="#">набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 </a><a class="searchbar__result-item" href="#">набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 </a></div><a class="searchbar__result-section-other" href="#">Остальные</a>
+              </div>
+              <div class="searchbar__result-section">
+                <div class="searchbar__result-section-list"><a class="searchbar__result-item" href="#">набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 </a><a class="searchbar__result-item" href="#">набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 </a><a class="searchbar__result-item" href="#">набор для <span>рез</span>ки и развальцовки трубок в пластиковом кейсе - 370 </a></div><a class="searchbar__result-section-other" href="#">Остальные</a>
+              </div>
+            </div>
           </div>
           <button class="header__burger js-menu-open" type="button"><span> </span></button>
         </div>
@@ -46,6 +56,9 @@
         </nav>
         <div class="header-menu__contacts"> 
           <div class="header-menu__contacts-links">
+            <div class="header-menu__contacts-item"><span>Мы в соц. сетях:</span>
+              <div class="header-menu__contacts-socials socials"> <a class="socials-link" href=""><img src="./img/icons/youtube.svg" alt=""></a><a class="socials-link" href=""><img src="./img/icons/tg.svg" alt=""></a></div>
+            </div>
             <div class="header-menu__contacts-item"><span>Телефон для связи:</span><a href="tel:+78003331316">8 (800) 333-13-16</a></div>
             <div class="header-menu__contacts-item"><span>Почта для связи:</span><a href="mailto:info@tegira.ru">info@tegira.ru</a></div>
           </div><a class="header-menu__contacts-btn btn btn--wide" href="#"> <span>Связаться с нами</span>
@@ -125,10 +138,10 @@
               <div class="catalog-main__list"> 
                 <div class="catalog-item"> 
                   <div class="catalog-item__main">
-                    <div class="catalog-item__category">Ключи</div><a class="catalog-item__img" href="#">
-                      <picture> 
-                        <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
-                      </picture></a><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
+                    <div class="catalog-item__category">Ключи</div>
+                    <picture class="catalog-item__img"> 
+                      <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
+                    </picture><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
                             <svg width="40" height="40">
                               <use xlink:href="img/icons/icons.svg#arrow"></use>
                             </svg></span></a>
@@ -137,10 +150,22 @@
                 </div>
                 <div class="catalog-item"> 
                   <div class="catalog-item__main">
-                    <div class="catalog-item__category">Ключи</div><a class="catalog-item__img" href="#">
-                      <picture> 
-                        <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
-                      </picture></a><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
+                    <div class="catalog-item__category">Ключи</div>
+                    <picture class="catalog-item__img"> 
+                      <source src="./img/catalog/catalog-02.webp" type="images/webp"><img src="./img/catalog/catalog-02.png" alt="">
+                    </picture><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
+                            <svg width="40" height="40">
+                              <use xlink:href="img/icons/icons.svg#arrow"></use>
+                            </svg></span></a>
+                  </div>
+                  <div class="catalog-item__name">Название в 1 <br> или 2 строки</div>
+                </div>
+                <div class="catalog-item"> 
+                  <div class="catalog-item__main">
+                    <div class="catalog-item__category">Ключи</div>
+                    <picture class="catalog-item__img"> 
+                      <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
+                    </picture><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
                             <svg width="40" height="40">
                               <use xlink:href="img/icons/icons.svg#arrow"></use>
                             </svg></span></a>
@@ -149,10 +174,22 @@
                 </div>
                 <div class="catalog-item"> 
                   <div class="catalog-item__main">
-                    <div class="catalog-item__category">Ключи</div><a class="catalog-item__img" href="#">
-                      <picture> 
-                        <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
-                      </picture></a><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
+                    <div class="catalog-item__category">Ключи</div>
+                    <picture class="catalog-item__img"> 
+                      <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
+                    </picture><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
+                            <svg width="40" height="40">
+                              <use xlink:href="img/icons/icons.svg#arrow"></use>
+                            </svg></span></a>
+                  </div>
+                  <div class="catalog-item__name">Название в одну <br> две или даже <br> три строки</div>
+                </div>
+                <div class="catalog-item"> 
+                  <div class="catalog-item__main">
+                    <div class="catalog-item__category">Ключи</div>
+                    <picture class="catalog-item__img"> 
+                      <source src="./img/catalog/catalog-not-found.webp" type="images/webp"><img src="./img/catalog/catalog-not-found.png" alt="">
+                    </picture><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
                             <svg width="40" height="40">
                               <use xlink:href="img/icons/icons.svg#arrow"></use>
                             </svg></span></a>
@@ -161,10 +198,10 @@
                 </div>
                 <div class="catalog-item"> 
                   <div class="catalog-item__main">
-                    <div class="catalog-item__category">Ключи</div><a class="catalog-item__img" href="#">
-                      <picture> 
-                        <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
-                      </picture></a><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
+                    <div class="catalog-item__category">Ключи</div>
+                    <picture class="catalog-item__img"> 
+                      <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
+                    </picture><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
                             <svg width="40" height="40">
                               <use xlink:href="img/icons/icons.svg#arrow"></use>
                             </svg></span></a>
@@ -173,10 +210,10 @@
                 </div>
                 <div class="catalog-item"> 
                   <div class="catalog-item__main">
-                    <div class="catalog-item__category">Ключи</div><a class="catalog-item__img" href="#">
-                      <picture> 
-                        <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
-                      </picture></a><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
+                    <div class="catalog-item__category">Ключи</div>
+                    <picture class="catalog-item__img"> 
+                      <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
+                    </picture><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
                             <svg width="40" height="40">
                               <use xlink:href="img/icons/icons.svg#arrow"></use>
                             </svg></span></a>
@@ -185,10 +222,10 @@
                 </div>
                 <div class="catalog-item"> 
                   <div class="catalog-item__main">
-                    <div class="catalog-item__category">Ключи</div><a class="catalog-item__img" href="#">
-                      <picture> 
-                        <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
-                      </picture></a><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
+                    <div class="catalog-item__category">Ключи</div>
+                    <picture class="catalog-item__img"> 
+                      <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
+                    </picture><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
                             <svg width="40" height="40">
                               <use xlink:href="img/icons/icons.svg#arrow"></use>
                             </svg></span></a>
@@ -197,22 +234,10 @@
                 </div>
                 <div class="catalog-item"> 
                   <div class="catalog-item__main">
-                    <div class="catalog-item__category">Ключи</div><a class="catalog-item__img" href="#">
-                      <picture> 
-                        <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
-                      </picture></a><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
-                            <svg width="40" height="40">
-                              <use xlink:href="img/icons/icons.svg#arrow"></use>
-                            </svg></span></a>
-                  </div>
-                  <div class="catalog-item__name">серия MST</div>
-                </div>
-                <div class="catalog-item"> 
-                  <div class="catalog-item__main">
-                    <div class="catalog-item__category">Ключи</div><a class="catalog-item__img" href="#">
-                      <picture> 
-                        <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
-                      </picture></a><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
+                    <div class="catalog-item__category">Ключи</div>
+                    <picture class="catalog-item__img"> 
+                      <source src="./img/catalog/catalog-01.webp" type="images/webp"><img src="./img/catalog/catalog-01.png" alt="">
+                    </picture><a class="catalog-item__link" href="#"><span class="catalog-item__link-title">Подробнее</span><span class="catalog-item__link-icon">
                             <svg width="40" height="40">
                               <use xlink:href="img/icons/icons.svg#arrow"></use>
                             </svg></span></a>
@@ -278,7 +303,16 @@
       <div class="container"> 
         <div class="footer__wrapper"> 
           <div class="footer__main"> <a class="footer__logo" href="#"><img src="./img/logo.svg" alt=""></a>
-            <div class="footer__contacts"> <span>Связаться с нами:</span><a href="tel:+78003331316">8 (800) 333-13-16</a><a href="mailto:info@tegira.ru">info@tegira.ru</a></div>
+            <div class="footer__contacts"> 
+              <div class="footer__contacts-item">
+                <div class="footer__contacts-item-label">Связаться с нами:</div>
+                <div class="footer__contacts-item-links"><a href="tel:+78003331316">8 (800) 333-13-16</a><a href="mailto:info@tegira.ru">info@tegira.ru</a></div>
+              </div>
+              <div class="footer__contacts-item"> 
+                <div class="footer__contacts-item-label">Мы в соц. сетях:</div>
+                <div class="footer__contacts-socials socials"> <a class="socials-link" href=""><img src="./img/icons/youtube.svg" alt=""></a><a class="socials-link" href=""><img src="./img/icons/tg.svg" alt=""></a></div>
+              </div>
+            </div>
           </div>
           <div class="footer__catalog"> <span>Каталог</span><a href="#">Обслуживание болтовых соединений</a><a href="#">Искробезопасный инструмент</a><a href="#">Промышленная мебель</a><a href="#">Слесарно-монтажный инструмент</a></div>
           <div class="footer__nav"><span>О компании</span>

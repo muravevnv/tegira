@@ -148,6 +148,7 @@ if(map) {
         hintContent: 'Метка в Санкт-Петербурге'
       }, {
         iconLayout: 'default#image',
+        iconImageHref: '../img/icons/map-pin.svg',
         iconImageSize: [28, 32],
         iconImageOffset: [-14, -14]
       });

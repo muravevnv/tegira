@@ -24,12 +24,8 @@
   }
 
   &__main {
-    max-width: 350px;
+    max-width: 360px;
     width: 100%;
-
-    @include media(lg) {
-      max-width: 243px;
-    }
 
     @include media(md) {
       max-width: 100%;
@@ -54,23 +50,36 @@
   }
 
   &__contacts {
-
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    
 
     @include media(sm) {
       margin-top: 26px;
       padding-top: 26px;
       border-top: 1px solid rgba(255, 255, 255, .15);
+      gap: 24px;
+      flex-wrap: wrap;
     }
 
-    span {
-      display: block;
-      opacity: .5;
-      font-weight: 500;
+    &-item {
 
-      @include media(sm) {
-        font-size: 14px;
-        margin-bottom: 14px;
+      &-label {
+        display: block;
+        opacity: .5;
+        font-weight: 500;
+  
+        @include media(sm) {
+          font-size: 14px;
+          margin-bottom: 14px;
+        }
       }
+    }
+
+
+    span {
+
     }
 
     a {

@@ -1523,6 +1523,10 @@ textarea.form-control {
   position: relative;
 }
 
+.searchbar__panel {
+  position: relative;
+}
+
 .searchbar__input {
   height: 60px;
   padding: 16px 30px;
@@ -1558,6 +1562,51 @@ textarea.form-control {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.searchbar__result {
+  max-width: 100%;
+  position: absolute;
+  top: calc(100% + 5px);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 24px 0;
+  background-color: var(--color-whte);
+  border: 1px solid #ECECEC;
+  z-index: 3;
+}
+
+.searchbar__result-section:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+.searchbar__result-section-other {
+  padding: 0 30px 0 18px;
+  display: block;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(13, 13, 13, 0.5);
+}
+
+.searchbar__result-item {
+  display: block;
+  padding: 2px 30px 4px 42px;
+  color: rgba(13, 13, 13, 0.6);
+  background: url("../img/icons/arrow-link.svg") top 0 left 18px/24px no-repeat;
+  transition: 0.25s;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.searchbar__result-item span {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.searchbar__result-item + .searchbar__result-item {
+  margin-top: 10px;
 }
 
 .header-menu {
@@ -1655,7 +1704,7 @@ textarea.form-control {
 }
 
 .footer__main {
-  max-width: 350px;
+  max-width: 360px;
   width: 100%;
 }
 
@@ -1666,7 +1715,13 @@ textarea.form-control {
   margin-bottom: 30px;
 }
 
-.footer__contacts span {
+.footer__contacts {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.footer__contacts-item-label {
   display: block;
   opacity: 0.5;
   font-weight: 500;
@@ -2801,6 +2856,11 @@ textarea.form-control {
   font-weight: 500;
 }
 
+.article__subtitle {
+  font-size: 24px;
+  font-weight: 500;
+}
+
 .article__date {
   margin-top: 10px;
   opacity: 0.5;
@@ -2812,6 +2872,28 @@ textarea.form-control {
 
 .article__desc p + p {
   margin-top: 16px;
+}
+
+.article__list li {
+  position: relative;
+  font-size: 16px;
+  padding-left: 24px;
+  opacity: 0.7;
+}
+
+.article__list li::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: currentColor;
+  border-radius: 50%;
+  top: 10px;
+  left: 8px;
+}
+
+.article__list li:not(:last-of-type) {
+  margin-bottom: 16px;
 }
 
 .article__img img {
@@ -3286,12 +3368,27 @@ textarea.form-control {
 
 .catalog-item__main {
   display: flex;
+  align-items: center;
   justify-content: center;
   position: relative;
   padding: 30px 14px 14px;
   border-radius: 20px;
   margin-bottom: 10px;
   background-color: rgba(58, 65, 74, 0.04);
+  height: 314px;
+}
+
+.catalog-item__img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  max-height: 270px;
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-item__img img {
+  display: block;
 }
 
 .catalog-item__category {
@@ -3507,6 +3604,32 @@ textarea.form-control {
   border-radius: 50%;
 }
 
+.product__main-list li {
+  position: relative;
+  font-size: 16px;
+  padding-left: 24px;
+  opacity: 0.7;
+}
+
+.product__main-list li a {
+  text-decoration: underline;
+}
+
+.product__main-list li::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: currentColor;
+  border-radius: 50%;
+  top: 10px;
+  left: 8px;
+}
+
+.product__main-list li:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
 .product__main-img {
   position: relative;
   overflow: hidden;
@@ -3584,10 +3707,6 @@ textarea.form-control {
   .footer__wrapper {
     padding: 30px 20px 14px 20px;
     font-size: 16px;
-  }
-
-  .footer__main {
-    max-width: 243px;
   }
 
   .footer__logo {
@@ -4149,6 +4268,10 @@ textarea.form-control {
     font-size: 24px;
   }
 
+  .article__subtitle {
+    font-size: 18px;
+  }
+
   .article__images-row {
     gap: 10px;
   }
@@ -4380,9 +4503,11 @@ textarea.form-control {
     margin-top: 26px;
     padding-top: 26px;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
+    gap: 24px;
+    flex-wrap: wrap;
   }
 
-  .footer__contacts span {
+  .footer__contacts-item-label {
     font-size: 14px;
     margin-bottom: 14px;
   }
@@ -4740,6 +4865,10 @@ textarea.form-control {
     background-color: var(--color-primary);
     border-color: var(--color-primary);
     color: var(--color-whte);
+  }
+
+  .searchbar__result-item:hover {
+    background-color: rgba(35, 35, 35, 0.04);
   }
 
   .header-menu__item > a:hover {

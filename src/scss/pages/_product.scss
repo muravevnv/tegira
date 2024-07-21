@@ -221,6 +221,34 @@
       }
     }
 
+    &-list {
+      li {
+        position: relative;
+        font-size: 16px;
+        padding-left: 24px;
+        opacity: .7;
+
+        a {
+          text-decoration: underline;
+        }
+        
+        &::before {
+          position: absolute;
+          content: '';
+          width: 4px;
+          height: 4px;
+          background-color: currentColor;
+          border-radius: 50%;
+          top: 10px;
+          left: 8px;
+        }
+  
+        &:not(:last-of-type) {
+          margin-bottom: 16px;
+        }
+      }
+    }
+
     &-img {
       position: relative;
       overflow: hidden;
